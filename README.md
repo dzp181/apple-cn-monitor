@@ -119,6 +119,17 @@ cp local.env.example local.env     # 填入 ntfy 发布令牌，文件名已被 
 
 `p` 是部件号数组，`s` 是「门店编号 → 有货机型下标」，整体约 1.5 KB。X 监控配置台的详情页通过自己的后端读取这条消息来展示每家门店的库存，**页面不直连苹果**——否则一次全量刷新就是几十个请求，必然 541。这条链路不写 `state.json`、不发提醒号，失败不影响提醒链路。主题前缀仍是 `x-`，现有发布令牌可直接使用。
 
+### 怎么定时跑（重要）
+
+GitHub 自带 `schedule` 在这个账号下**从来没触发过**（`dzp181/apple-cn-monitor` 与 `dzp181/x2ding` 都是 0 条 schedule 运行，只有手动 dispatch），所以两个工作流都去掉了 `on.schedule`，改由国内服务器 crontab 调 `workflow_dispatch`：
+
+```cron
+10 * * * * /home/zhangsan/bin/apple-trigger.sh status.yml   # 门店库存快照
+30 * * * * /home/zhangsan/bin/apple-trigger.sh apple.yml    # 官翻 / 自提提醒
+```
+
+脚本 `~/bin/apple-trigger.sh` 依赖 `~/.x2ding.gh-token`（scope 含 `repo` + `workflow`），日志 `~/apple-trigger.log`。少了这台机器就不会自动跑，只能手动点 Actions。
+
 ### 克制机制（重要）
 
 - Apple 按出口 IP 限频，连续密集查询会返回 **HTTP 541**，冷却通常 10–15 分钟（实测被限后十几分钟内连单店请求也返回 541）。脚本遇到 541/429 立刻写 `state.json` 的 `cooldown_until = now + 900`，**整段跳过自提查询**，且这一轮不写任何自提状态；冷却跨轮生效（因为 state 会回写）。

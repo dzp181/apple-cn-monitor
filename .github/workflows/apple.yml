@@ -1,5 +1,8 @@
 name: apple-cn-monitor
 
+# 定时不用 GitHub 的 schedule：这个账号下所有仓库的 cron 都没触发过，
+# 统一由国内服务器 crontab 调用 workflow_dispatch（~/bin/apple-trigger.sh apple.yml，每小时 :30）。
+# 单轮境外约 11 个请求（官翻 5 + 预热 1 + 新版探测 1 + 兜底门店 4）。
 on:
   workflow_dispatch:
     inputs:
@@ -11,10 +14,6 @@ on:
         description: '重建基线（不推送）'
         required: false
         default: 'false'
-  schedule:
-    # 每小时一轮。官翻价格与门店库存变化都不快，刻意保持低频：
-    # 单轮境外约 11 个请求（官翻 5 + 预热 1 + 新版探测 1 + 兜底门店 4）。
-    - cron: '30 * * * *'
 
 permissions:
   contents: write          # state.json / catalog.json / archive 需要回写

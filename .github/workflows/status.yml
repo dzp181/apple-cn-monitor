@@ -4,11 +4,10 @@ name: apple-cn-status
 # 供 X 监控配置台的详情页读取。与 apple.yml（降价 / 有货提醒）完全独立：
 # 这条链路不写 state、不发提醒，失败也不影响提醒链路。
 
+# 定时不用 GitHub 的 schedule：这个账号下所有仓库的 cron 都没触发过，
+# 统一由国内服务器 crontab 调用 workflow_dispatch（~/bin/apple-trigger.sh status.yml，每小时 :10）。
 on:
   workflow_dispatch:
-  schedule:
-    # 与提醒链路（:30）错开 20 分钟，避免同一时段两个出口 IP 同时打苹果
-    - cron: '10 */2 * * *'
 
 permissions:
   contents: read
