@@ -542,7 +542,7 @@ def fetch_by_retail(cfg, catalog, parts, opener):
                     if code not in snapshot[part]["stores"]:
                         snapshot[part]["stores"].append(code)
         if store != stores[-1]:
-            time.sleep(0.8)
+            time.sleep(1.2)
 
     if ok_stores == 0:
         raise FetchError("显式门店接口未返回任何门店，本轮自提数据不可用")
@@ -731,6 +731,60 @@ def publish(cfg, payload, dry_run=False):
         return False
     except Exception as e:
         log(f"推送失败：{e}")
+        return False
+
+
+def publish_status(cfg, snapshot, catalog, dry_run=False):
+    """把本轮「门店 × 机型」的有货快照发布到独立主题，供配置台详情页读取。
+
+    页面如果自己去逐店查苹果，几十个请求就会触发 541 限频，所以改成由监控
+    每小时跑一轮、发布一次结果，页面只读这份快照（不碰苹果接口）。
+
+    为了压小体积，部件号用下标表示：p 是部件号数组，s 是 {门店编号: [下标]}。
+    """
+    topic = (cfg.get("status_topic") or "x-apple-status").strip()
+    order = list((catalog.get("products") or {}).keys())
+    idx = {p: i for i, p in enumerate(order)}
+    stores = {}
+    known = 0
+    for part, snap in (snapshot or {}).items():
+        if part not in idx or snap.get("status") == "unknown":
+            continue
+        known += 1
+        for sid in snap.get("stores") or []:
+            stores.setdefault(sid, []).append(idx[part])
+    if not known:
+        log("门店库存快照为空，跳过发布")
+        return False
+    payload = {
+        "v": 1,
+        "at": dt.datetime.now(CST).strftime("%Y-%m-%d %H:%M"),
+        "p": order,
+        "s": {k: sorted(v) for k, v in stores.items()},
+    }
+    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    message = {"topic": topic, "message": body, "priority": 1, "tags": ["bar_chart"]}
+    if dry_run:
+        log(f"--- DRY RUN 门店快照（{len(body)} 字节）---")
+        print(body[:400])
+        return True
+    token = os.environ.get("APPLE_NTFY_TOKEN") or ""
+    url = cfg["ntfy_url"].rstrip("/") + "/"
+    headers = {"Content-Type": "application/json; charset=utf-8"}
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    req = urllib.request.Request(url, data=json.dumps(message, ensure_ascii=False).encode("utf-8"),
+                                 headers=headers, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            r.read()
+        log(f"门店库存快照已发布到 {topic}：{len(stores)} 家门店 / {known} 个机型，{len(body)} 字节")
+        return True
+    except urllib.error.HTTPError as e:
+        log(f"门店快照发布失败 HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:200]}")
+        return False
+    except Exception as e:
+        log(f"门店快照发布失败：{e}")
         return False
 
 
@@ -953,11 +1007,31 @@ def cmd_test(cfg, dry_run=False):
     return ok
 
 
+def cmd_status(cfg, dry_run=False):
+    """全量抓一遍「门店 × 机型」库存并发布快照，不写 state、不发提醒。
+
+    配置台详情页需要 49 家门店各自的库存，但页面自己去逐店查会立刻触发苹果的
+    541 限频，所以单独跑这一条链路：一轮 49 个请求，与提醒链路互不影响。
+    """
+    catalog = load_catalog()
+    parts = sorted((catalog.get("products") or {}).keys())
+    stores = list((catalog.get("stores") or {}).keys())
+    if not parts or not stores:
+        raise SystemExit("catalog 为空，先跑 --refresh-catalog")
+    full = json.loads(json.dumps(cfg))
+    full["pickup"]["fallback_stores"] = stores
+    full["pickup"]["fallback_max_parts"] = len(parts)
+    opener = warm_opener(full)
+    snapshot = fetch_by_retail(full, catalog, parts, opener)
+    return publish_status(full, snapshot, catalog, dry_run=dry_run)
+
+
 def main():
     ap = argparse.ArgumentParser(description="Apple 中国大陆官翻降价 / 直营店自提 → ntfy")
     ap.add_argument("--init", action="store_true", help="建基线，不推送")
     ap.add_argument("--dry-run", action="store_true", help="只打印将要推送的消息，不落盘")
     ap.add_argument("--test", action="store_true", help="发一条自检消息")
+    ap.add_argument("--status", action="store_true", help="全量抓门店库存并发布快照（配置台用）")
     ap.add_argument("--max", type=int, default=None, help="覆盖单轮推送上限")
     ap.add_argument("--list-stores", action="store_true", help="联网打印直营店代码")
     ap.add_argument("--list-products", action="store_true", help="打印当前监控的 SKU")
@@ -987,6 +1061,16 @@ def main():
         return
     if args.test:
         if not cmd_test(cfg, dry_run=args.dry_run):
+            raise SystemExit(1)
+        return
+    if args.status:
+        try:
+            ok = cmd_status(cfg, dry_run=args.dry_run)
+        except RateLimited as e:
+            raise SystemExit(f"门店库存抓取被苹果限频：{e}")
+        except FetchError as e:
+            raise SystemExit(f"门店库存抓取失败：{e}")
+        if not ok:
             raise SystemExit(1)
         return
     run_once(cfg, dry_run=args.dry_run, max_override=args.max)
