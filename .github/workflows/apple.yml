@@ -1,0 +1,61 @@
+name: apple-cn-monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只打印不推送'
+        required: false
+        default: 'false'
+      init:
+        description: '重建基线（不推送）'
+        required: false
+        default: 'false'
+  schedule:
+    # 每 30 分钟一轮。单轮只有约 7 个请求（官翻 5 + 自提 2），刻意克制。
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write          # state.json / catalog.json / archive 需要回写
+
+concurrency:
+  group: apple-cn-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run
+        env:
+          APPLE_NTFY_TOKEN: ${{ secrets.APPLE_NTFY_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.init }}" = "true" ]; then
+            python3 apple_push.py --init
+          elif [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python3 apple_push.py --dry-run
+          else
+            python3 apple_push.py
+          fi
+
+      # CI 每轮都是干净环境：只有产生事件或冷却变化时才写 state，
+      # 无变化时不落盘、这里也不会有多余 commit。
+      - name: Persist state, catalog and archive
+        if: always()
+        run: |
+          git config user.email "apple-cn-monitor-bot@users.noreply.github.com"
+          git config user.name "apple-cn-monitor bot"
+          git add state.json data/catalog.json 2>/dev/null || true
+          if [ -d archive ]; then git add archive; fi
+          if git diff --cached --quiet; then
+            echo "state / catalog / archive 无变化，跳过提交"
+          else
+            git commit -m "chore(state+catalog+archive): persist incremental data [skip ci]"
+            git push || (git pull --rebase origin master && git push)
+          fi

@@ -1,0 +1,3967 @@
+{
+  "cooldown_until": 0,
+  "last_run": "2026-11-13 12:56 CST",
+  "pickup": {
+    "MG314CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R643",
+        "R574"
+      ]
+    },
+    "MG334CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R703",
+        "R493",
+        "R643",
+        "R574",
+        "R765",
+        "R688",
+        "R471",
+        "R532"
+      ]
+    },
+    "MG344CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R703",
+        "R493",
+        "R574",
+        "R765",
+        "R688"
+      ]
+    },
+    "MG364CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R703",
+        "R493",
+        "R643",
+        "R574",
+        "R765",
+        "R688",
+        "R471",
+        "R532"
+      ]
+    },
+    "MG374CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R574",
+        "R532"
+      ]
+    },
+    "MG394CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R765",
+        "R688",
+        "R471"
+      ]
+    },
+    "MG3A4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R493",
+        "R471"
+      ]
+    },
+    "MG3C4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R493",
+        "R643"
+      ]
+    },
+    "MG3D4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R688"
+      ]
+    },
+    "MG3E4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R493",
+        "R643",
+        "R574",
+        "R765",
+        "R471"
+      ]
+    },
+    "MG3F4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R643",
+        "R765"
+      ]
+    },
+    "MG3G4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R703",
+        "R493",
+        "R643",
+        "R574",
+        "R765",
+        "R532"
+      ]
+    },
+    "MK2M4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2N4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2P4CH/A": {
+      "last_notified": 0,
+      "status": "available",
+      "stores": [
+        "R765"
+      ]
+    },
+    "MK2Q4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2T4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2U4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2V4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    },
+    "MK2W4CH/A": {
+      "last_notified": 0,
+      "status": "unavailable",
+      "stores": []
+    }
+  },
+  "refurb": {
+    "accessories/FDF04CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FDF04CH/A",
+      "price": 229900,
+      "target_tag": "",
+      "title": "翻新 HomePod (第二代) - 白色",
+      "url": "https://www.apple.com.cn/shop/product/fdf04ch/a"
+    },
+    "accessories/FFEL4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEL4CH/A",
+      "price": 2119900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 标准玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffel4ch/a"
+    },
+    "accessories/FFEN4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEN4CH/A",
+      "price": 1869900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 标准玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffen4ch/a"
+    },
+    "accessories/FFEP4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEP4CH/A",
+      "price": 2339900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 纳米纹理玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffep4ch/a"
+    },
+    "accessories/FFEQ4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEQ4CH/A",
+      "price": 2079900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 纳米纹理玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffeq4ch/a"
+    },
+    "accessories/FFEW4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEW4CH/A",
+      "price": 1269900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffew4ch/a"
+    },
+    "accessories/FFEX4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEX4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - 可调倾斜度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffex4ch/a"
+    },
+    "accessories/FFEY4CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFEY4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffey4ch/a"
+    },
+    "accessories/FFF04CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFF04CH/A",
+      "price": 1479900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/fff04ch/a"
+    },
+    "accessories/FFF14CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFF14CH/A",
+      "price": 1229900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - 可调倾斜度的支架",
+      "url": "https://www.apple.com.cn/shop/product/fff14ch/a"
+    },
+    "accessories/FFF24CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FFF24CH/A",
+      "price": 1229900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/fff24ch/a"
+    },
+    "accessories/FU8F2CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FU8F2CH/A",
+      "price": 84900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil (第二代)",
+      "url": "https://www.apple.com.cn/shop/product/fu8f2ch/a"
+    },
+    "accessories/FUWA3CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FUWA3CH/A",
+      "price": 54900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil (USB-C)",
+      "url": "https://www.apple.com.cn/shop/product/fuwa3ch/a"
+    },
+    "accessories/FX2D3CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FX2D3CH/A",
+      "price": 84900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil Pro",
+      "url": "https://www.apple.com.cn/shop/product/fx2d3ch/a"
+    },
+    "accessories/FYJJ3CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FYJJ3CH/A",
+      "price": 1391900,
+      "target_tag": "",
+      "title": "翻新 Apple Studio Display (配备纳米纹理玻璃面板和可调倾斜度及高度的支架)",
+      "url": "https://www.apple.com.cn/shop/product/fyjj3ch/a"
+    },
+    "accessories/FYJK3CH/A": {
+      "category": "accessories",
+      "gone": false,
+      "part": "FYJK3CH/A",
+      "price": 1136900,
+      "target_tag": "",
+      "title": "翻新 Apple Studio Display (配备纳米纹理玻璃面板和可调倾斜度的支架)",
+      "url": "https://www.apple.com.cn/shop/product/fyjk3ch/a"
+    },
+    "homepod/FDF04CH/A": {
+      "category": "homepod",
+      "gone": false,
+      "part": "FDF04CH/A",
+      "price": 229900,
+      "target_tag": "",
+      "title": "翻新 HomePod (第二代) - 白色",
+      "url": "https://www.apple.com.cn/shop/product/fdf04ch/a"
+    },
+    "ipad/FC9W4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FC9W4CH/A",
+      "price": 459900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fc9w4ch/a"
+    },
+    "ipad/FC9X4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FC9X4CH/A",
+      "price": 459900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fc9x4ch/a"
+    },
+    "ipad/FC9Y4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FC9Y4CH/A",
+      "price": 459900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fc9y4ch/a"
+    },
+    "ipad/FCA04CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCA04CH/A",
+      "price": 459900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fca04ch/a"
+    },
+    "ipad/FCA14CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCA14CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fca14ch/a"
+    },
+    "ipad/FCA34CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCA34CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fca34ch/a"
+    },
+    "ipad/FCA44CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCA44CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fca44ch/a"
+    },
+    "ipad/FCA64CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCA64CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fca64ch/a"
+    },
+    "ipad/FCGD4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGD4CH/A",
+      "price": 569900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcgd4ch/a"
+    },
+    "ipad/FCGE4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGE4CH/A",
+      "price": 569900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcge4ch/a"
+    },
+    "ipad/FCGF4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGF4CH/A",
+      "price": 569900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcgf4ch/a"
+    },
+    "ipad/FCGG4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGG4CH/A",
+      "price": 569900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcgg4ch/a"
+    },
+    "ipad/FCGH4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGH4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcgh4ch/a"
+    },
+    "ipad/FCGJ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGJ4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcgj4ch/a"
+    },
+    "ipad/FCGK4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGK4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcgk4ch/a"
+    },
+    "ipad/FCGL4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGL4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcgl4ch/a"
+    },
+    "ipad/FCGM4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGM4CH/A",
+      "price": 759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcgm4ch/a"
+    },
+    "ipad/FCGN4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGN4CH/A",
+      "price": 759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcgn4ch/a"
+    },
+    "ipad/FCGP4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGP4CH/A",
+      "price": 759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcgp4ch/a"
+    },
+    "ipad/FCGQ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGQ4CH/A",
+      "price": 759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcgq4ch/a"
+    },
+    "ipad/FCGR4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGR4CH/A",
+      "price": 909900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcgr4ch/a"
+    },
+    "ipad/FCGT4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGT4CH/A",
+      "price": 909900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcgt4ch/a"
+    },
+    "ipad/FCGV4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCGV4CH/A",
+      "price": 909900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcgv4ch/a"
+    },
+    "ipad/FCJJ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJJ4CH/A",
+      "price": 729900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcjj4ch/a"
+    },
+    "ipad/FCJK4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJK4CH/A",
+      "price": 729900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcjk4ch/a"
+    },
+    "ipad/FCJM4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJM4CH/A",
+      "price": 729900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcjm4ch/a"
+    },
+    "ipad/FCJN4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJN4CH/A",
+      "price": 769900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcjn4ch/a"
+    },
+    "ipad/FCJP4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJP4CH/A",
+      "price": 769900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcjp4ch/a"
+    },
+    "ipad/FCJQ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJQ4CH/A",
+      "price": 769900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcjq4ch/a"
+    },
+    "ipad/FCJT4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJT4CH/A",
+      "price": 769900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcjt4ch/a"
+    },
+    "ipad/FCJW4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJW4CH/A",
+      "price": 919900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcjw4ch/a"
+    },
+    "ipad/FCJX4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJX4CH/A",
+      "price": 919900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 512GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcjx4ch/a"
+    },
+    "ipad/FCJY4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCJY4CH/A",
+      "price": 1059900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcjy4ch/a"
+    },
+    "ipad/FCL14CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCL14CH/A",
+      "price": 1059900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcl14ch/a"
+    },
+    "ipad/FCL24CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCL24CH/A",
+      "price": 1059900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcl24ch/a"
+    },
+    "ipad/FCL34CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCL34CH/A",
+      "price": 1059900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网 + 蜂窝网络机型 1TB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcl34ch/a"
+    },
+    "ipad/FCNH4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNH4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcnh4ch/a"
+    },
+    "ipad/FCNJ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNJ4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcnj4ch/a"
+    },
+    "ipad/FCNK4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNK4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcnk4ch/a"
+    },
+    "ipad/FCNL4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNL4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcnl4ch/a"
+    },
+    "ipad/FCNN4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNN4CH/A",
+      "price": 659900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcnn4ch/a"
+    },
+    "ipad/FCNP4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNP4CH/A",
+      "price": 659900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fcnp4ch/a"
+    },
+    "ipad/FCNQ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNQ4CH/A",
+      "price": 659900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcnq4ch/a"
+    },
+    "ipad/FCNR4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNR4CH/A",
+      "price": 659900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcnr4ch/a"
+    },
+    "ipad/FCNT4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNT4CH/A",
+      "price": 809900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 512GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fcnt4ch/a"
+    },
+    "ipad/FCNX4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCNX4CH/A",
+      "price": 809900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 512GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fcnx4ch/a"
+    },
+    "ipad/FCQ34CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FCQ34CH/A",
+      "price": 949900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M3) 无线局域网机型 1TB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fcq34ch/a"
+    },
+    "ipad/FD3Y4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD3Y4CH/A",
+      "price": 319900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 128GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd3y4ch/a"
+    },
+    "ipad/FD4A4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4A4CH/A",
+      "price": 319900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fd4a4ch/a"
+    },
+    "ipad/FD4D4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4D4CH/A",
+      "price": 319900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 128GB - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/fd4d4ch/a"
+    },
+    "ipad/FD4E4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4E4CH/A",
+      "price": 319900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 128GB - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fd4e4ch/a"
+    },
+    "ipad/FD4G4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4G4CH/A",
+      "price": 369900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 256GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd4g4ch/a"
+    },
+    "ipad/FD4H4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4H4CH/A",
+      "price": 369900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fd4h4ch/a"
+    },
+    "ipad/FD4J4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4J4CH/A",
+      "price": 369900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 256GB - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/fd4j4ch/a"
+    },
+    "ipad/FD4P4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4P4CH/A",
+      "price": 369900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 256GB - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fd4p4ch/a"
+    },
+    "ipad/FD4Q4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4Q4CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 512GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd4q4ch/a"
+    },
+    "ipad/FD4Y4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD4Y4CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fd4y4ch/a"
+    },
+    "ipad/FD7U4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD7U4CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 128GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd7u4ch/a"
+    },
+    "ipad/FD7V4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD7V4CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fd7v4ch/a"
+    },
+    "ipad/FD7W4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD7W4CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 128GB - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/fd7w4ch/a"
+    },
+    "ipad/FD7X4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD7X4CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 128GB - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fd7x4ch/a"
+    },
+    "ipad/FD7Y4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD7Y4CH/A",
+      "price": 479900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 256GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd7y4ch/a"
+    },
+    "ipad/FD8A4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD8A4CH/A",
+      "price": 479900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 256GB - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/fd8a4ch/a"
+    },
+    "ipad/FD8C4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD8C4CH/A",
+      "price": 479900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 256GB - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fd8c4ch/a"
+    },
+    "ipad/FD8D4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FD8D4CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 512GB - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fd8d4ch/a"
+    },
+    "ipad/FDAJ4CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FDAJ4CH/A",
+      "price": 479900,
+      "target_tag": "",
+      "title": "翻新 iPad (A16) 无线局域网 + 蜂窝网络机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdaj4ch/a"
+    },
+    "ipad/FK7M3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK7M3CH/A",
+      "price": 359900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 64GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fk7m3ch/a"
+    },
+    "ipad/FK7R3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK7R3CH/A",
+      "price": 359900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 64GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fk7r3ch/a"
+    },
+    "ipad/FK7T3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK7T3CH/A",
+      "price": 429900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fk7t3ch/a"
+    },
+    "ipad/FK7V3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK7V3CH/A",
+      "price": 429900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fk7v3ch/a"
+    },
+    "ipad/FK7X3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK7X3CH/A",
+      "price": 429900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fk7x3ch/a"
+    },
+    "ipad/FLWR3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FLWR3CH/A",
+      "price": 429900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网机型 256GB - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/flwr3ch/a"
+    },
+    "ipad/FNXD3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXD3CH/A",
+      "price": 639900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 128GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxd3ch/a"
+    },
+    "ipad/FNXE3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXE3CH/A",
+      "price": 639900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 128GB 银色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxe3ch/a"
+    },
+    "ipad/FNXF3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXF3CH/A",
+      "price": 711900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 256GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxf3ch/a"
+    },
+    "ipad/FNXG3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXG3CH/A",
+      "price": 711900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 256GB 银色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxg3ch/a"
+    },
+    "ipad/FNXH3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXH3CH/A",
+      "price": 856900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 512GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxh3ch/a"
+    },
+    "ipad/FNXJ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXJ3CH/A",
+      "price": 856900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 512GB 银色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxj3ch/a"
+    },
+    "ipad/FNXK3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXK3CH/A",
+      "price": 1146900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 1TB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxk3ch/a"
+    },
+    "ipad/FNXM3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXM3CH/A",
+      "price": 1436900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网机型 2TB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxm3ch/a"
+    },
+    "ipad/FNXP3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXP3CH/A",
+      "price": 859900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 128GB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxp3ch/a"
+    },
+    "ipad/FNXQ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXQ3CH/A",
+      "price": 859900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 128GB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxq3ch/a"
+    },
+    "ipad/FNXR3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXR3CH/A",
+      "price": 938900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 256GB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxr3ch/a"
+    },
+    "ipad/FNXT3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXT3CH/A",
+      "price": 938900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 256GB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxt3ch/a"
+    },
+    "ipad/FNXU3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXU3CH/A",
+      "price": 1083900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 512GB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxu3ch/a"
+    },
+    "ipad/FNXV3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXV3CH/A",
+      "price": 1083900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 512GB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxv3ch/a"
+    },
+    "ipad/FNXW3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXW3CH/A",
+      "price": 1373900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 1TB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxw3ch/a"
+    },
+    "ipad/FNXX3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXX3CH/A",
+      "price": 1373900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 1TB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxx3ch/a"
+    },
+    "ipad/FNXY3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNXY3CH/A",
+      "price": 1662900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 2TB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fnxy3ch/a"
+    },
+    "ipad/FNYN3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYN3CH/A",
+      "price": 740900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 128GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyn3ch/a"
+    },
+    "ipad/FNYQ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYQ3CH/A",
+      "price": 820900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 256GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyq3ch/a"
+    },
+    "ipad/FNYR3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYR3CH/A",
+      "price": 820900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 256GB 银色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyr3ch/a"
+    },
+    "ipad/FNYT3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYT3CH/A",
+      "price": 966900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 512GB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyt3ch/a"
+    },
+    "ipad/FNYU3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYU3CH/A",
+      "price": 966900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 512GB 银色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyu3ch/a"
+    },
+    "ipad/FNYV3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNYV3CH/A",
+      "price": 1256900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 1TB 深空灰色 (第四代)",
+      "url": "https://www.apple.com.cn/shop/product/fnyv3ch/a"
+    },
+    "ipad/FP2C3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2C3CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 256GB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2c3ch/a"
+    },
+    "ipad/FP2D3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2D3CH/A",
+      "price": 1184900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 512GB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2d3ch/a"
+    },
+    "ipad/FP2E3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2E3CH/A",
+      "price": 1184900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 512GB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2e3ch/a"
+    },
+    "ipad/FP2F3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2F3CH/A",
+      "price": 1474900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 1TB 深空灰色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2f3ch/a"
+    },
+    "ipad/FP2G3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2G3CH/A",
+      "price": 1474900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 1TB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2g3ch/a"
+    },
+    "ipad/FP2H3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2H3CH/A",
+      "price": 1763900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 2TB 深空灰色(第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2h3ch/a"
+    },
+    "ipad/FP2J3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FP2J3CH/A",
+      "price": 1763900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网 + 蜂窝网络机型 2TB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fp2j3ch/a"
+    },
+    "ipad/FPQ13CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQ13CH/A",
+      "price": 279900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 64GB - 蓝色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpq13ch/a"
+    },
+    "ipad/FPQ23CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQ23CH/A",
+      "price": 279900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 64GB - 黄色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpq23ch/a"
+    },
+    "ipad/FPQ33CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQ33CH/A",
+      "price": 279900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 64GB - 粉色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpq33ch/a"
+    },
+    "ipad/FPQ93CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQ93CH/A",
+      "price": 329900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 256GB - 蓝色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpq93ch/a"
+    },
+    "ipad/FPQA3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQA3CH/A",
+      "price": 329900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 256GB - 黄色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpqa3ch/a"
+    },
+    "ipad/FPQC3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FPQC3CH/A",
+      "price": 329900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网机型 256GB - 粉色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fpqc3ch/a"
+    },
+    "ipad/FU8F2CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FU8F2CH/A",
+      "price": 84900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil (第二代)",
+      "url": "https://www.apple.com.cn/shop/product/fu8f2ch/a"
+    },
+    "ipad/FUQY3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUQY3CH/A",
+      "price": 359900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网 + 蜂窝网络机型 64GB - 银色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fuqy3ch/a"
+    },
+    "ipad/FUU83CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUU83CH/A",
+      "price": 409900,
+      "target_tag": "",
+      "title": "翻新 iPad 无线局域网 + 蜂窝网络机型 256GB - 粉色 (第十代)",
+      "url": "https://www.apple.com.cn/shop/product/fuu83ch/a"
+    },
+    "ipad/FUWA3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWA3CH/A",
+      "price": 54900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil (USB-C)",
+      "url": "https://www.apple.com.cn/shop/product/fuwa3ch/a"
+    },
+    "ipad/FUWC3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWC3CH/A",
+      "price": 389900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fuwc3ch/a"
+    },
+    "ipad/FUWD3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWD3CH/A",
+      "price": 389900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fuwd3ch/a"
+    },
+    "ipad/FUWJ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWJ3CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fuwj3ch/a"
+    },
+    "ipad/FUWK3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWK3CH/A",
+      "price": 439900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fuwk3ch/a"
+    },
+    "ipad/FUWP3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWP3CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 512GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fuwp3ch/a"
+    },
+    "ipad/FUXW3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUXW3CH/A",
+      "price": 489900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fuxw3ch/a"
+    },
+    "ipad/FUXY3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUXY3CH/A",
+      "price": 489900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fuxy3ch/a"
+    },
+    "ipad/FUY13CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUY13CH/A",
+      "price": 529900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fuy13ch/a"
+    },
+    "ipad/FUY43CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUY43CH/A",
+      "price": 529900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fuy43ch/a"
+    },
+    "ipad/FUY53CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUY53CH/A",
+      "price": 529900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fuy53ch/a"
+    },
+    "ipad/FUYA3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUYA3CH/A",
+      "price": 779900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 1TB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fuya3ch/a"
+    },
+    "ipad/FV783CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV783CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fv783ch/a"
+    },
+    "ipad/FV793CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV793CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fv793ch/a"
+    },
+    "ipad/FV7A3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7A3CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fv7a3ch/a"
+    },
+    "ipad/FV7C3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7C3CH/A",
+      "price": 619900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fv7c3ch/a"
+    },
+    "ipad/FV7D3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7D3CH/A",
+      "price": 649900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fv7d3ch/a"
+    },
+    "ipad/FV7E3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7E3CH/A",
+      "price": 649900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fv7e3ch/a"
+    },
+    "ipad/FV7G3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7G3CH/A",
+      "price": 649900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fv7g3ch/a"
+    },
+    "ipad/FV7H3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7H3CH/A",
+      "price": 779900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 512GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fv7h3ch/a"
+    },
+    "ipad/FV7J3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7J3CH/A",
+      "price": 779900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fv7j3ch/a"
+    },
+    "ipad/FV7M3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7M3CH/A",
+      "price": 899900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 1TB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fv7m3ch/a"
+    },
+    "ipad/FV7N3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7N3CH/A",
+      "price": 899900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 1TB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fv7n3ch/a"
+    },
+    "ipad/FV7P3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7P3CH/A",
+      "price": 899900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 1TB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fv7p3ch/a"
+    },
+    "ipad/FV7Q3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FV7Q3CH/A",
+      "price": 899900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 1TB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fv7q3ch/a"
+    },
+    "ipad/FVV83CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVV83CH/A",
+      "price": 829900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 256GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvv83ch/a"
+    },
+    "ipad/FVV93CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVV93CH/A",
+      "price": 829900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 256GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvv93ch/a"
+    },
+    "ipad/FVVC3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVVC3CH/A",
+      "price": 969900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 512GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvvc3ch/a"
+    },
+    "ipad/FVVD3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVVD3CH/A",
+      "price": 969900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 512GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvvd3ch/a"
+    },
+    "ipad/FVVE3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVVE3CH/A",
+      "price": 1259900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 1TB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvve3ch/a"
+    },
+    "ipad/FVVF3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVVF3CH/A",
+      "price": 1259900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 1TB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvvf3ch/a"
+    },
+    "ipad/FVW93CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVW93CH/A",
+      "price": 969900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 256GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvw93ch/a"
+    },
+    "ipad/FVWA3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWA3CH/A",
+      "price": 969900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 256GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvwa3ch/a"
+    },
+    "ipad/FVWC3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWC3CH/A",
+      "price": 1119900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 512GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvwc3ch/a"
+    },
+    "ipad/FVWD3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWD3CH/A",
+      "price": 1119900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 512GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvwd3ch/a"
+    },
+    "ipad/FVWE3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWE3CH/A",
+      "price": 1409900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvwe3ch/a"
+    },
+    "ipad/FVWF3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWF3CH/A",
+      "price": 1409900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvwf3ch/a"
+    },
+    "ipad/FVWH3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVWH3CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvwh3ch/a"
+    },
+    "ipad/FVX23CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVX23CH/A",
+      "price": 1029900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 256GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvx23ch/a"
+    },
+    "ipad/FVX43CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVX43CH/A",
+      "price": 1179900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 512GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvx43ch/a"
+    },
+    "ipad/FVX53CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVX53CH/A",
+      "price": 1179900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 512GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvx53ch/a"
+    },
+    "ipad/FVX63CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVX63CH/A",
+      "price": 1459900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 1TB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvx63ch/a"
+    },
+    "ipad/FVX73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVX73CH/A",
+      "price": 1459900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 1TB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvx73ch/a"
+    },
+    "ipad/FVY13CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY13CH/A",
+      "price": 1179900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 256GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvy13ch/a"
+    },
+    "ipad/FVY23CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY23CH/A",
+      "price": 1179900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 256GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvy23ch/a"
+    },
+    "ipad/FVY43CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY43CH/A",
+      "price": 1319900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 512GB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvy43ch/a"
+    },
+    "ipad/FVY53CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY53CH/A",
+      "price": 1319900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 512GB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvy53ch/a"
+    },
+    "ipad/FVY63CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY63CH/A",
+      "price": 1609900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvy63ch/a"
+    },
+    "ipad/FVY73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY73CH/A",
+      "price": 1609900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配标准玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fvy73ch/a"
+    },
+    "ipad/FVY83CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FVY83CH/A",
+      "price": 1899900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配标准玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fvy83ch/a"
+    },
+    "ipad/FWR73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWR73CH/A",
+      "price": 1329900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网机型 1TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwr73ch/a"
+    },
+    "ipad/FWRF3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRF3CH/A",
+      "price": 1529900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 1TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwrf3ch/a"
+    },
+    "ipad/FWRG3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRG3CH/A",
+      "price": 1529900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 1TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwrg3ch/a"
+    },
+    "ipad/FWRH3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRH3CH/A",
+      "price": 1819900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 2TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwrh3ch/a"
+    },
+    "ipad/FWRJ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRJ3CH/A",
+      "price": 1819900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网机型 2TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwrj3ch/a"
+    },
+    "ipad/FWRU3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRU3CH/A",
+      "price": 1469900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwru3ch/a"
+    },
+    "ipad/FWRV3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRV3CH/A",
+      "price": 1469900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwrv3ch/a"
+    },
+    "ipad/FWRW3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRW3CH/A",
+      "price": 1759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwrw3ch/a"
+    },
+    "ipad/FWRX3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWRX3CH/A",
+      "price": 1759900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwrx3ch/a"
+    },
+    "ipad/FWT33CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWT33CH/A",
+      "price": 1679900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwt33ch/a"
+    },
+    "ipad/FWT53CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWT53CH/A",
+      "price": 1679900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 1TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwt53ch/a"
+    },
+    "ipad/FWT63CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWT63CH/A",
+      "price": 1969900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配纳米纹理玻璃面板 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fwt63ch/a"
+    },
+    "ipad/FWT73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FWT73CH/A",
+      "price": 1969900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 iPad Pro (M4) 无线局域网 + 蜂窝网络机型 2TB 配纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwt73ch/a"
+    },
+    "ipad/FX2D3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FX2D3CH/A",
+      "price": 84900,
+      "target_tag": "",
+      "title": "翻新 Apple Pencil Pro",
+      "url": "https://www.apple.com.cn/shop/product/fx2d3ch/a"
+    },
+    "ipad/FXN63CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXN63CH/A",
+      "price": 409900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fxn63ch/a"
+    },
+    "ipad/FXN73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXN73CH/A",
+      "price": 409900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fxn73ch/a"
+    },
+    "ipad/FXN83CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXN83CH/A",
+      "price": 409900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fxn83ch/a"
+    },
+    "ipad/FXN93CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXN93CH/A",
+      "price": 409900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fxn93ch/a"
+    },
+    "ipad/FXNA3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXNA3CH/A",
+      "price": 449900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fxna3ch/a"
+    },
+    "ipad/FXNC3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXNC3CH/A",
+      "price": 449900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fxnc3ch/a"
+    },
+    "ipad/FXND3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXND3CH/A",
+      "price": 449900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fxnd3ch/a"
+    },
+    "ipad/FXNE3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXNE3CH/A",
+      "price": 449900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fxne3ch/a"
+    },
+    "ipad/FXQ03CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ03CH/A",
+      "price": 519900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 128GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fxq03ch/a"
+    },
+    "ipad/FXQ13CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ13CH/A",
+      "price": 519900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 128GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fxq13ch/a"
+    },
+    "ipad/FXQ23CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ23CH/A",
+      "price": 519900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fxq23ch/a"
+    },
+    "ipad/FXQ33CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ33CH/A",
+      "price": 519900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fxq33ch/a"
+    },
+    "ipad/FXQ43CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ43CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fxq43ch/a"
+    },
+    "ipad/FXQ53CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ53CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 256GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fxq53ch/a"
+    },
+    "ipad/FXQ63CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ63CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 256GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fxq63ch/a"
+    },
+    "ipad/FXQ73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FXQ73CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fxq73ch/a"
+    },
+    "ipad/FYH13CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYH13CH/A",
+      "price": 599900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fyh13ch/a"
+    },
+    "ipad/FYH23CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYH23CH/A",
+      "price": 599900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 512GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fyh23ch/a"
+    },
+    "ipad/FYH33CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYH33CH/A",
+      "price": 599900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 512GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fyh33ch/a"
+    },
+    "ipad/FYHG3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYHG3CH/A",
+      "price": 709900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 512GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fyhg3ch/a"
+    },
+    "ipad/FYHH3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYHH3CH/A",
+      "price": 709900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fyhh3ch/a"
+    },
+    "ipad/FYHJ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYHJ3CH/A",
+      "price": 709900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 512GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fyhj3ch/a"
+    },
+    "ipad/FYHK3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYHK3CH/A",
+      "price": 709900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 512GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fyhk3ch/a"
+    },
+    "mac/FC6J4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC6J4CH/A",
+      "price": 1069900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fc6j4ch/a"
+    },
+    "mac/FC6K4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC6K4CH/A",
+      "price": 1069900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fc6k4ch/a"
+    },
+    "mac/FC6L4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC6L4CH/A",
+      "price": 1069900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fc6l4ch/a"
+    },
+    "mac/FC7A4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC7A4CH/A",
+      "price": 819900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fc7a4ch/a"
+    },
+    "mac/FC7C4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC7C4CH/A",
+      "price": 939900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fc7c4ch/a"
+    },
+    "mac/FC7D4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FC7D4CH/A",
+      "price": 1069900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fc7d4ch/a"
+    },
+    "mac/FCR24CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FCR24CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fcr24ch/a"
+    },
+    "mac/FCX44CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FCX44CH/A",
+      "price": 1059900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 12 核中央处理器和 16 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/fcx44ch/a"
+    },
+    "mac/FCYT4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FCYT4CH/A",
+      "price": 759900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/fcyt4ch/a"
+    },
+    "mac/FDE04CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE04CH/A",
+      "price": 1099900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fde04ch/a"
+    },
+    "mac/FDE14CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE14CH/A",
+      "price": 1289900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fde14ch/a"
+    },
+    "mac/FDE34CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE34CH/A",
+      "price": 1419900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fde34ch/a"
+    },
+    "mac/FDE44CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE44CH/A",
+      "price": 1099900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fde44ch/a"
+    },
+    "mac/FDE54CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE54CH/A",
+      "price": 1289900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fde54ch/a"
+    },
+    "mac/FDE64CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDE64CH/A",
+      "price": 1419900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fde64ch/a"
+    },
+    "mac/FDH74CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDH74CH/A",
+      "price": 849900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 8 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdh74ch/a"
+    },
+    "mac/FDH84CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDH84CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdh84ch/a"
+    },
+    "mac/FDH94CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDH94CH/A",
+      "price": 1169900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdh94ch/a"
+    },
+    "mac/FDHA4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHA4CH/A",
+      "price": 849900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 8 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdha4ch/a"
+    },
+    "mac/FDHC4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHC4CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdhc4ch/a"
+    },
+    "mac/FDHD4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHD4CH/A",
+      "price": 1169900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdhd4ch/a"
+    },
+    "mac/FDHE4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHE4CH/A",
+      "price": 849900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 8 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdhe4ch/a"
+    },
+    "mac/FDHF4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHF4CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdhf4ch/a"
+    },
+    "mac/FDHG4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHG4CH/A",
+      "price": 1169900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdhg4ch/a"
+    },
+    "mac/FDHH4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHH4CH/A",
+      "price": 849900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 8 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdhh4ch/a"
+    },
+    "mac/FDHJ4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHJ4CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdhj4ch/a"
+    },
+    "mac/FDHK4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDHK4CH/A",
+      "price": 1169900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdhk4ch/a"
+    },
+    "mac/FDV94CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDV94CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdv94ch/a"
+    },
+    "mac/FDVA4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVA4CH/A",
+      "price": 1209900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdva4ch/a"
+    },
+    "mac/FDVC4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVC4CH/A",
+      "price": 1339900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fdvc4ch/a"
+    },
+    "mac/FDVD4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVD4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdvd4ch/a"
+    },
+    "mac/FDVE4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVE4CH/A",
+      "price": 1209900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdve4ch/a"
+    },
+    "mac/FDVF4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVF4CH/A",
+      "price": 1339900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fdvf4ch/a"
+    },
+    "mac/FDVH4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVH4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdvh4ch/a"
+    },
+    "mac/FDVK4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVK4CH/A",
+      "price": 1209900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdvk4ch/a"
+    },
+    "mac/FDVN4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVN4CH/A",
+      "price": 1339900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fdvn4ch/a"
+    },
+    "mac/FDVQ4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVQ4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdvq4ch/a"
+    },
+    "mac/FDVT4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVT4CH/A",
+      "price": 1209900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdvt4ch/a"
+    },
+    "mac/FDVU4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FDVU4CH/A",
+      "price": 1339900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fdvu4ch/a"
+    },
+    "mac/FFEL4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEL4CH/A",
+      "price": 2119900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 标准玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffel4ch/a"
+    },
+    "mac/FFEN4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEN4CH/A",
+      "price": 1869900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 标准玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffen4ch/a"
+    },
+    "mac/FFEP4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEP4CH/A",
+      "price": 2339900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 纳米纹理玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffep4ch/a"
+    },
+    "mac/FFEQ4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEQ4CH/A",
+      "price": 2079900,
+      "target_tag": "",
+      "title": "翻新 Studio Display XDR - 纳米纹理玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffeq4ch/a"
+    },
+    "mac/FFEW4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEW4CH/A",
+      "price": 1269900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffew4ch/a"
+    },
+    "mac/FFEX4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEX4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - 可调倾斜度的支架",
+      "url": "https://www.apple.com.cn/shop/product/ffex4ch/a"
+    },
+    "mac/FFEY4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFEY4CH/A",
+      "price": 1019900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 标准玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/ffey4ch/a"
+    },
+    "mac/FFF04CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFF04CH/A",
+      "price": 1479900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - 可调倾斜度及高度的支架",
+      "url": "https://www.apple.com.cn/shop/product/fff04ch/a"
+    },
+    "mac/FFF14CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFF14CH/A",
+      "price": 1229900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - 可调倾斜度的支架",
+      "url": "https://www.apple.com.cn/shop/product/fff14ch/a"
+    },
+    "mac/FFF24CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FFF24CH/A",
+      "price": 1229900,
+      "target_tag": "",
+      "title": "翻新 Studio Display - 纳米纹理玻璃面板 - VESA 支架转换器",
+      "url": "https://www.apple.com.cn/shop/product/fff24ch/a"
+    },
+    "mac/FGDN4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDN4CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fgdn4ch/a"
+    },
+    "mac/FGDP4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDP4CH/A",
+      "price": 2209900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fgdp4ch/a"
+    },
+    "mac/FGDQ4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDQ4CH/A",
+      "price": 2889900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 32 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fgdq4ch/a"
+    },
+    "mac/FGDR4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDR4CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgdr4ch/a"
+    },
+    "mac/FGDT4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDT4CH/A",
+      "price": 2209900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgdt4ch/a"
+    },
+    "mac/FGDU4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGDU4CH/A",
+      "price": 2889900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 32 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgdu4ch/a"
+    },
+    "mac/FGE44CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGE44CH/A",
+      "price": 2119900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fge44ch/a"
+    },
+    "mac/FGE64CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGE64CH/A",
+      "price": 2509900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fge64ch/a"
+    },
+    "mac/FGE74CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGE74CH/A",
+      "price": 3059900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 32 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fge74ch/a"
+    },
+    "mac/FGE94CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGE94CH/A",
+      "price": 3479900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 40 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fge94ch/a"
+    },
+    "mac/FGEA4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGEA4CH/A",
+      "price": 2119900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgea4ch/a"
+    },
+    "mac/FGEC4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGEC4CH/A",
+      "price": 2509900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgec4ch/a"
+    },
+    "mac/FGED4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGED4CH/A",
+      "price": 3059900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 32 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fged4ch/a"
+    },
+    "mac/FGEE4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FGEE4CH/A",
+      "price": 3479900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 40 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fgee4ch/a"
+    },
+    "mac/FHFA4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFA4CH/A",
+      "price": 469900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fhfa4ch/a"
+    },
+    "mac/FHFC4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFC4CH/A",
+      "price": 539900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片，带有触控 ID) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fhfc4ch/a"
+    },
+    "mac/FHFD4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFD4CH/A",
+      "price": 469900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片) - 柑橘黄色",
+      "url": "https://www.apple.com.cn/shop/product/fhfd4ch/a"
+    },
+    "mac/FHFE4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFE4CH/A",
+      "price": 539900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片，带有触控 ID) - 柑橘黄色",
+      "url": "https://www.apple.com.cn/shop/product/fhfe4ch/a"
+    },
+    "mac/FHFF4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFF4CH/A",
+      "price": 469900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片) - 靛蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fhff4ch/a"
+    },
+    "mac/FHFG4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFG4CH/A",
+      "price": 539900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片，带有触控 ID) - 靛蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fhfg4ch/a"
+    },
+    "mac/FHFH4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFH4CH/A",
+      "price": 469900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片) - 桃粉色",
+      "url": "https://www.apple.com.cn/shop/product/fhfh4ch/a"
+    },
+    "mac/FHFJ4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FHFJ4CH/A",
+      "price": 539900,
+      "target_tag": "",
+      "title": "翻新 MacBook Neo (Apple A18 Pro 芯片，带有触控 ID) - 桃粉色",
+      "url": "https://www.apple.com.cn/shop/product/fhfj4ch/a"
+    },
+    "mac/FU9D3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FU9D3CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/fu9d3ch/a"
+    },
+    "mac/FU9E3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FU9E3CH/A",
+      "price": 639900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/fu9e3ch/a"
+    },
+    "mac/FW1G3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1G3CH/A",
+      "price": 819900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fw1g3ch/a"
+    },
+    "mac/FW1H3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1H3CH/A",
+      "price": 939900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fw1h3ch/a"
+    },
+    "mac/FW1J3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1J3CH/A",
+      "price": 819900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fw1j3ch/a"
+    },
+    "mac/FW1K3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1K3CH/A",
+      "price": 939900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fw1k3ch/a"
+    },
+    "mac/FW1L3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1L3CH/A",
+      "price": 819900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fw1l3ch/a"
+    },
+    "mac/FW1M3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW1M3CH/A",
+      "price": 939900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/fw1m3ch/a"
+    },
+    "mac/FW2U3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW2U3CH/A",
+      "price": 1029900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fw2u3ch/a"
+    },
+    "mac/FW2V3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW2V3CH/A",
+      "price": 1219900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fw2v3ch/a"
+    },
+    "mac/FW2W3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW2W3CH/A",
+      "price": 1029900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fw2w3ch/a"
+    },
+    "mac/FW2X3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FW2X3CH/A",
+      "price": 1219900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fw2x3ch/a"
+    },
+    "mac/FWUU3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FWUU3CH/A",
+      "price": 1119900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fwuu3ch/a"
+    },
+    "mac/FWUY3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FWUY3CH/A",
+      "price": 1119900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/fwuy3ch/a"
+    },
+    "mac/FWV43CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FWV43CH/A",
+      "price": 1119900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fwv43ch/a"
+    },
+    "mac/FWV53CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FWV53CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/fwv53ch/a"
+    },
+    "mac/FX2F3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2F3CH/A",
+      "price": 1799900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fx2f3ch/a"
+    },
+    "mac/FX2G3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2G3CH/A",
+      "price": 2459900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fx2g3ch/a"
+    },
+    "mac/FX2J3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2J3CH/A",
+      "price": 1799900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx2j3ch/a"
+    },
+    "mac/FX2K3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2K3CH/A",
+      "price": 2459900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx2k3ch/a"
+    },
+    "mac/FX2T3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2T3CH/A",
+      "price": 1839900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fx2t3ch/a"
+    },
+    "mac/FX2U3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2U3CH/A",
+      "price": 2229900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fx2u3ch/a"
+    },
+    "mac/FX2W3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2W3CH/A",
+      "price": 3069900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Max 芯片 (配备 16 核中央处理器和 40 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/fx2w3ch/a"
+    },
+    "mac/FX2X3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2X3CH/A",
+      "price": 1839900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx2x3ch/a"
+    },
+    "mac/FX2Y3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX2Y3CH/A",
+      "price": 2229900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx2y3ch/a"
+    },
+    "mac/FX303CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX303CH/A",
+      "price": 2639900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx303ch/a"
+    },
+    "mac/FX313CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FX313CH/A",
+      "price": 3069900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Max 芯片 (配备 16 核中央处理器和 40 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/fx313ch/a"
+    },
+    "mac/FYJJ3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FYJJ3CH/A",
+      "price": 1391900,
+      "target_tag": "",
+      "title": "翻新 Apple Studio Display (配备纳米纹理玻璃面板和可调倾斜度及高度的支架)",
+      "url": "https://www.apple.com.cn/shop/product/fyjj3ch/a"
+    },
+    "mac/FYJK3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FYJK3CH/A",
+      "price": 1136900,
+      "target_tag": "",
+      "title": "翻新 Apple Studio Display (配备纳米纹理玻璃面板和可调倾斜度的支架)",
+      "url": "https://www.apple.com.cn/shop/product/fyjk3ch/a"
+    },
+    "mac/G1CF1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1CF1CH/A",
+      "price": 829900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和 10Gb 以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1cf1ch/a"
+    },
+    "mac/G1DF0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1DF0CH/A",
+      "price": 1129900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/g1df0ch/a"
+    },
+    "mac/G1DT1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1DT1CH/A",
+      "price": 1319900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1dt1ch/a"
+    },
+    "mac/G1EH1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EH1CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1eh1ch/a"
+    },
+    "mac/G1EJ0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EJ0CH/A",
+      "price": 1439900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1ej0ch/a"
+    },
+    "mac/G1EK2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EK2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/g1ek2ch/a"
+    },
+    "mac/G1EL2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EL2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/g1el2ch/a"
+    },
+    "mac/G1EM2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EM2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/g1em2ch/a"
+    },
+    "mac/G1EN2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EN2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/g1en2ch/a"
+    },
+    "mac/G1EN3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EN3CH/A",
+      "price": 1569900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/g1en3ch/a"
+    },
+    "mac/G1EP1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EP1CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1ep1ch/a"
+    },
+    "mac/G1EQ0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EQ0CH/A",
+      "price": 1439900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1eq0ch/a"
+    },
+    "mac/G1EQ2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EQ2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1eq2ch/a"
+    },
+    "mac/G1ER1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ER1CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/g1er1ch/a"
+    },
+    "mac/G1ES2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ES2CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/g1es2ch/a"
+    },
+    "mac/G1ET0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ET0CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/g1et0ch/a"
+    },
+    "mac/G1ET1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ET1CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/g1et1ch/a"
+    },
+    "mac/G1EU0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EU0CH/A",
+      "price": 1439900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/g1eu0ch/a"
+    },
+    "mac/G1EV0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EV0CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 橙色",
+      "url": "https://www.apple.com.cn/shop/product/g1ev0ch/a"
+    },
+    "mac/G1EV1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1EV1CH/A",
+      "price": 1249900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 橙色",
+      "url": "https://www.apple.com.cn/shop/product/g1ev1ch/a"
+    },
+    "mac/G1FW0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1FW0CH/A",
+      "price": 3389900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M4 Max 芯片 (配备 16 核中央处理器和 40 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1fw0ch/a"
+    },
+    "mac/G1HE0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1HE0CH/A",
+      "price": 1129900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1he0ch/a"
+    },
+    "mac/G1JV5CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JV5CH/A",
+      "price": 1379900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jv5ch/a"
+    },
+    "mac/G1JVGCH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JVGCH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jvgch/a"
+    },
+    "mac/G1K10CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K10CH/A",
+      "price": 1569900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k10ch/a"
+    },
+    "mac/G1K11CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K11CH/A",
+      "price": 1829900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k11ch/a"
+    },
+    "mac/G1K13CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K13CH/A",
+      "price": 1889900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k13ch/a"
+    },
+    "mac/G1K15CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K15CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k15ch/a"
+    },
+    "mac/G1K17CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K17CH/A",
+      "price": 1509900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k17ch/a"
+    },
+    "mac/G1K19CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K19CH/A",
+      "price": 2019900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1k19ch/a"
+    },
+    "mac/G1K28CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K28CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 黄色",
+      "url": "https://www.apple.com.cn/shop/product/g1k28ch/a"
+    },
+    "mac/G1K31CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K31CH/A",
+      "price": 1829900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/g1k31ch/a"
+    },
+    "mac/G1K35CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K35CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 绿色",
+      "url": "https://www.apple.com.cn/shop/product/g1k35ch/a"
+    },
+    "mac/G1K50CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K50CH/A",
+      "price": 1569900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1k50ch/a"
+    },
+    "mac/G1K52CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K52CH/A",
+      "price": 2139900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1k52ch/a"
+    },
+    "mac/G1K65CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K65CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/g1k65ch/a"
+    },
+    "mac/G1K66CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K66CH/A",
+      "price": 2019900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 粉色",
+      "url": "https://www.apple.com.cn/shop/product/g1k66ch/a"
+    },
+    "mac/G1K75CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K75CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/g1k75ch/a"
+    },
+    "mac/G1K7ACH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K7ACH/A",
+      "price": 1629900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 以及千兆以太网端口和纳米纹理玻璃面板 - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/g1k7ach/a"
+    },
+    "mac/G1K80CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1K80CH/A",
+      "price": 1569900,
+      "target_tag": "",
+      "title": "翻新 24 英寸 iMac Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口 - 橙色",
+      "url": "https://www.apple.com.cn/shop/product/g1k80ch/a"
+    },
+    "mac/G1KJ0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KJ0CH/A",
+      "price": 1609900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1kj0ch/a"
+    },
+    "mac/G1KJ2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KJ2CH/A",
+      "price": 1389900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1kj2ch/a"
+    },
+    "mac/G1KK4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KK4CH/A",
+      "price": 2499900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1kk4ch/a"
+    },
+    "mac/G1KKACH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KKACH/A",
+      "price": 2599900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1kkach/a"
+    },
+    "mac/G1KM2CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KM2CH/A",
+      "price": 1389900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1km2ch/a"
+    },
+    "mac/G1KM3CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KM3CH/A",
+      "price": 1699900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1km3ch/a"
+    },
+    "mac/G1KN0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KN0CH/A",
+      "price": 1739900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1kn0ch/a"
+    },
+    "mac/G1KN6CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KN6CH/A",
+      "price": 1829900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1kn6ch/a"
+    },
+    "mac/G1KNACH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1KNACH/A",
+      "price": 2599900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 芯片 (配‍备 10 核中央处理器和 10 核图形处理器) 和纳米纹理显示屏 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1knach/a"
+    },
+    "mac/G1L31CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L31CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/g1l31ch/a"
+    },
+    "mac/G1L60CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L60CH/A",
+      "price": 909900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/g1l60ch/a"
+    },
+    "mac/G1L61CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L61CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/g1l61ch/a"
+    },
+    "mac/G1L90CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L90CH/A",
+      "price": 909900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1l90ch/a"
+    },
+    "mac/G1L91CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L91CH/A",
+      "price": 1039900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1l91ch/a"
+    },
+    "mac/G1LT0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1LT0CH/A",
+      "price": 1149900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/g1lt0ch/a"
+    },
+    "mac/G1LW0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1LW0CH/A",
+      "price": 1149900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/g1lw0ch/a"
+    },
+    "mac/G1LZ0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1LZ0CH/A",
+      "price": 1149900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1lz0ch/a"
+    },
+    "mac/G1MH0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MH0CH/A",
+      "price": 1799900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) 和纳米纹理显示屏 - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1mh0ch/a"
+    },
+    "mac/G1MHACH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MHACH/A",
+      "price": 2019900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1mhach/a"
+    },
+    "mac/G1MLACH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MLACH/A",
+      "price": 2019900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1mlach/a"
+    },
+    "mac/G1MM1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MM1CH/A",
+      "price": 2939900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1mm1ch/a"
+    },
+    "mac/G1MNFCH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MNFCH/A",
+      "price": 3369900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 40 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1mnfch/a"
+    },
+    "mac/G1MV1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MV1CH/A",
+      "price": 2439900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/g1mv1ch/a"
+    },
+    "mac/G1MZ1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1MZ1CH/A",
+      "price": 2439900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1mz1ch/a"
+    },
+    "mac/G1N10CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1N10CH/A",
+      "price": 3159900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M5 Max 芯片 (配备 18 核中央处理器和 32 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1n10ch/a"
+    },
+    "watch/FEH44CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEH44CH/B",
+      "price": 169900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；40 毫米星光色铝金属表壳；星光色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/feh44ch/b"
+    },
+    "watch/FEH64CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEH64CH/B",
+      "price": 169900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；40 毫米星光色铝金属表壳；星光色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/feh64ch/b"
+    },
+    "watch/FEHA4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHA4CH/B",
+      "price": 169900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；40 毫米午夜色铝金属表壳；午夜色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/feha4ch/b"
+    },
+    "watch/FEHD4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHD4CH/B",
+      "price": 169900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；40 毫米午夜色铝金属表壳；午夜色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fehd4ch/b"
+    },
+    "watch/FEHH4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHH4CH/B",
+      "price": 189900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；44 毫米星光色铝金属表壳；星光色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fehh4ch/b"
+    },
+    "watch/FEHK4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHK4CH/B",
+      "price": 189900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；44 毫米星光色铝金属表壳；星光色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fehk4ch/b"
+    },
+    "watch/FEHP4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHP4CH/B",
+      "price": 189900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；44 毫米午夜色铝金属表壳；午夜色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fehp4ch/b"
+    },
+    "watch/FEHR4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEHR4CH/B",
+      "price": 189900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS)；44 毫米午夜色铝金属表壳；午夜色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fehr4ch/b"
+    },
+    "watch/FEPM4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPM4CH/B",
+      "price": 199900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；40 毫米星光色铝金属表壳；星光色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepm4ch/b"
+    },
+    "watch/FEPN4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPN4CH/B",
+      "price": 199900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；40 毫米星光色铝金属表壳；星光色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepn4ch/b"
+    },
+    "watch/FEPQ4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPQ4CH/B",
+      "price": 199900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；40 毫米午夜色铝金属表壳；午夜色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepq4ch/b"
+    },
+    "watch/FEPR4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPR4CH/B",
+      "price": 199900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；40 毫米午夜色铝金属表壳；午夜色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepr4ch/b"
+    },
+    "watch/FEPU4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPU4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；44 毫米星光色铝金属表壳；星光色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepu4ch/b"
+    },
+    "watch/FEPV4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPV4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；44 毫米星光色铝金属表壳；星光色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepv4ch/b"
+    },
+    "watch/FEPX4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPX4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；44 毫米午夜色铝金属表壳；午夜色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepx4ch/b"
+    },
+    "watch/FEPY4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEPY4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch SE 3 (GPS + 蜂窝网络)；44 毫米午夜色铝金属表壳；午夜色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fepy4ch/b"
+    },
+    "watch/FEUG4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUG4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米深空灰色铝金属表壳；黑色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/feug4ch/b"
+    },
+    "watch/FEUH4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUH4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米深空灰色铝金属表壳；黑色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/feuh4ch/b"
+    },
+    "watch/FEUN4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUN4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/feun4ch/b"
+    },
+    "watch/FEUP4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUP4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/feup4ch/b"
+    },
+    "watch/FEUT4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUT4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米银色铝金属表壳；雾紫色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/feut4ch/b"
+    },
+    "watch/FEUU4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEUU4CH/B",
+      "price": 219900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米银色铝金属表壳；雾紫色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/feuu4ch/b"
+    },
+    "watch/FEVN4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVN4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米深空灰色铝金属表壳；黑色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevn4ch/b"
+    },
+    "watch/FEVP4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVP4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米深空灰色铝金属表壳；黑色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevp4ch/b"
+    },
+    "watch/FEVT4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVT4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevt4ch/b"
+    },
+    "watch/FEVU4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVU4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevu4ch/b"
+    },
+    "watch/FEVW4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVW4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米银色铝金属表壳；雾紫色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevw4ch/b"
+    },
+    "watch/FEVX4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVX4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米银色铝金属表壳；雾紫色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevx4ch/b"
+    },
+    "watch/FEWJ4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEWJ4CH/B",
+      "price": 489900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Ultra 3 (GPS + 蜂窝网络)；49 毫米原色钛金属表壳；铁锚蓝色海洋表带",
+      "url": "https://www.apple.com.cn/shop/product/fewj4ch/b"
+    },
+    "watch/FF0M4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF0M4CH/B",
+      "price": 489900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Ultra 3 (GPS + 蜂窝网络)；49 毫米黑色钛金属表壳；黑色海洋表带",
+      "url": "https://www.apple.com.cn/shop/product/ff0m4ch/b"
+    },
+    "watch/FF954CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF954CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米深空灰色铝金属表壳；黑色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff954ch/b"
+    },
+    "watch/FF964CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF964CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米深空灰色铝金属表壳；黑色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff964ch/b"
+    },
+    "watch/FF984CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF984CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff984ch/b"
+    },
+    "watch/FF9A4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF9A4CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff9a4ch/b"
+    },
+    "watch/FF9G4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF9G4CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米银色铝金属表壳；雾紫色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff9g4ch/b"
+    },
+    "watch/FF9J4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FF9J4CH/B",
+      "price": 289900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；42 毫米银色铝金属表壳；雾紫色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ff9j4ch/b"
+    },
+    "watch/FFDD4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDD4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米深空灰色铝金属表壳；黑色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffdd4ch/b"
+    },
+    "watch/FFDE4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDE4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米深空灰色铝金属表壳；黑色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffde4ch/b"
+    },
+    "watch/FFDG4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDG4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffdg4ch/b"
+    },
+    "watch/FFDH4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDH4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米玫瑰金色铝金属表壳；淡桃粉色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffdh4ch/b"
+    },
+    "watch/FFDK4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDK4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米银色铝金属表壳；雾紫色运动型表带 (S/M 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffdk4ch/b"
+    },
+    "watch/FFDL4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FFDL4CH/B",
+      "price": 309900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS + 蜂窝网络)；46 毫米银色铝金属表壳；雾紫色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/ffdl4ch/b"
+    }
+  },
+  "seeded": true
+}

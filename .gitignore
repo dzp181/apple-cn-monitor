@@ -1,0 +1,7 @@
+local.env
+*.tmp
+.DS_Store
+__pycache__/
+*.pyc
+# 本机全局 gitignore 会忽略 README.md，这里显式放行
+!README.md

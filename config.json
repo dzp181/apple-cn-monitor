@@ -1,0 +1,22 @@
+{
+  "name": "苹果监控",
+  "region": "CN",
+  "currency": "CNY",
+  "ntfy_url": "http://112.74.95.74:8858",
+  "ntfy_topic": "x-apple-refurb",
+  "subscribe_url": "http://112.74.95.74:8858/x-apple-refurb",
+  "timeout": 25,
+  "max_per_run": 3,
+  "refurb": {
+    "categories": ["mac", "ipad", "watch", "accessories", "homepod"],
+    "notify_new_listing": true,
+    "target_rules": []
+  },
+  "pickup": {
+    "families": ["iphone-duo", "iphone-air"],
+    "max_parts": 20,
+    "store_whitelist": [],
+    "reminder_hours": 6,
+    "remind_while_in_stock": false
+  }
+}
