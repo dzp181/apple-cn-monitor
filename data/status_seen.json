@@ -1,0 +1,227 @@
+{
+  "stores": {
+    "R320": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R359": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A"
+      ]
+    },
+    "R388": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R389": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A"
+      ]
+    },
+    "R390": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R644": {
+      "at": {},
+      "parts": [
+        "MG314CH/A",
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A",
+        "MK2P4CH/A"
+      ]
+    },
+    "R645": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3A4CH/A",
+        "MG3E4CH/A"
+      ]
+    },
+    "R646": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3C4CH/A",
+        "MG3E4CH/A",
+        "MK2P4CH/A"
+      ]
+    },
+    "R648": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3A4CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R670": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MK2P4CH/A"
+      ]
+    },
+    "R678": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3C4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R683": {
+      "at": {},
+      "parts": [
+        "MG314CH/A",
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3C4CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R688": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3D4CH/A"
+      ]
+    },
+    "R703": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R705": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A"
+      ]
+    },
+    "R761": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3A4CH/A",
+        "MG3E4CH/A"
+      ]
+    },
+    "R765": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R766": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG394CH/A",
+        "MG3A4CH/A",
+        "MG3C4CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R792": {
+      "at": {},
+      "parts": [
+        "MG314CH/A",
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG374CH/A"
+      ]
+    },
+    "R793": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG3A4CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    }
+  },
+  "updated": "2026-11-13 17:09 北京时间",
+  "v": 2
+}
