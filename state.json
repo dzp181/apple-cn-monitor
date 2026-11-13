@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-13 17:30 北京时间",
+  "last_run": "2026-11-13 18:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -3116,7 +3116,7 @@
     },
     "mac/G1JVGCH/A": {
       "category": "mac",
-      "gone": true,
+      "gone": false,
       "part": "G1JVGCH/A",
       "price": 1699900,
       "target_tag": "",
@@ -3152,7 +3152,7 @@
     },
     "mac/G1K15CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1K15CH/A",
       "price": 1699900,
       "target_tag": "",
