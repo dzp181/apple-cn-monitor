@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import http.cookiejar
 import json
 import os
 import re
@@ -168,7 +169,7 @@ class FetchError(Exception):
     """抓取或解析失败：此时绝不能把已知商品判成下架 / 无货。"""
 
 
-def request(path, post=None, timeout=25):
+def request(path, post=None, timeout=25, opener=None):
     url = path if path.startswith("http") else BASE + path
     data = json.dumps(post, ensure_ascii=False).encode("utf-8") if post is not None else None
     headers = {
@@ -182,7 +183,8 @@ def request(path, post=None, timeout=25):
     req = urllib.request.Request(url, data=data, headers=headers,
                                  method="POST" if post is not None else "GET")
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        open_fn = opener.open if opener is not None else urllib.request.urlopen
+        with open_fn(req, timeout=timeout) as r:
             return r.status, r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         return e.code, e.read().decode("utf-8", "replace")
@@ -396,13 +398,26 @@ def fetch_pickup(cfg, catalog):
 
     whitelist = set(cfg.get("pickup", {}).get("store_whitelist") or [])
     snapshot = {}
+
+    # 先访问购买页建立带地区 cookie 的会话。境外出口 IP 可能被 Apple 定位到
+    # 中国大陆之外，导致 availability 返回空的 eligibleStores；预热能尽量让
+    # 后续查询落在大陆门店上下文里（同时更像真实浏览器，不额外轮询门店）。
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    try:
+        warm_code, _ = request("/shop/buy-iphone", timeout=cfg["timeout"], opener=opener)
+        log(f"自提会话预热 HTTP {warm_code}，会话 cookie {len(jar)} 个")
+    except Exception as e:
+        log(f"自提会话预热失败（忽略，继续查询）：{e}")
+
+    diag = None
     for offset in range(0, len(parts), 10):
         batch = parts[offset:offset + 10]
         query = {"fae": "true"}
         for i, part in enumerate(batch):
             query[f"parts.{i}"] = part
         url = "/shop/sba/availability-message?" + urllib.parse.urlencode(query)
-        status, text = request(url, timeout=cfg["timeout"])
+        status, text = request(url, timeout=cfg["timeout"], opener=opener)
         if status in (541, 429):
             raise RateLimited(f"HTTP {status}")
         if status != 200:
@@ -417,6 +432,13 @@ def fetch_pickup(cfg, catalog):
             raise FetchError(f"自提接口内部状态 {head_status}")
         if not content:
             raise FetchError("自提接口返回空 content（型号可能已停售）")
+
+        if diag is None:
+            sample = content[0]
+            addr = ((sample.get("deliveryMessage") or {}).get("address") or {})
+            diag = {"store_id": sample.get("storeId"),
+                    "region": f"{addr.get('state') or '-'}/{addr.get('city') or '-'}",
+                    "eligible": sample.get("eligibleStores")}
 
         by_part = {str(c.get("partNumber") or "").upper(): c for c in content}
         for part in batch:
@@ -436,6 +458,13 @@ def fetch_pickup(cfg, catalog):
             }
         if offset + 10 < len(parts):
             time.sleep(1.0)  # 批次之间留一口气
+
+    if diag:
+        log(f"自提诊断：接口门店 {diag['store_id']}，配送地区 {diag['region']}，"
+            f"首条 eligibleStores={diag['eligible']!r}")
+    if not any(v["status"] == "available" for v in snapshot.values()):
+        log("自提：本轮 0 家有货。若上面诊断的地区不在中国大陆，说明出口 IP 被地域路由；"
+            "此时数据不可用，脚本只记 unavailable，不会误报。")
     return snapshot
 
 
