@@ -35,5 +35,7 @@
     "reminder_hours": 6,
     "remind_while_in_stock": false
   },
-  "status_topic": "x-apple-status"
+  "status_topic": "x-apple-status",
+  "status_gap_s": 5,
+  "status_batch": 49
 }

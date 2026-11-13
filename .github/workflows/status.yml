@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   schedule:
     # 与提醒链路（:30）错开 20 分钟，避免同一时段两个出口 IP 同时打苹果
-    - cron: '10 * * * *'
+    - cron: '10 */2 * * *'
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    # 49 家门店 × 1 个请求，按 1.2 秒节奏约 2.5 分钟；留足余量
+    # 49 家门店 × 1 个请求，按 5 秒节奏约 4 分钟；留足余量
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4

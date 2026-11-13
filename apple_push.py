@@ -734,38 +734,35 @@ def publish(cfg, payload, dry_run=False):
         return False
 
 
-def publish_status(cfg, snapshot, catalog, dry_run=False):
-    """把本轮「门店 × 机型」的有货快照发布到独立主题，供配置台详情页读取。
+def publish_status(cfg, store_map, catalog, checked=None, dry_run=False):
+    """把本轮「门店 × 机型」的有货结果发布到独立主题，供配置台详情页读取。
 
     页面如果自己去逐店查苹果，几十个请求就会触发 541 限频，所以改成由监控
-    每小时跑一轮、发布一次结果，页面只读这份快照（不碰苹果接口）。
+    定时跑一轮、发布一次结果，页面只读这些快照（不碰苹果接口）。单轮没抓完
+    也没关系：后端会把最近若干轮按门店合并，门店越多轮次越全。
 
     为了压小体积，部件号用下标表示：p 是部件号数组，s 是 {门店编号: [下标]}。
     """
     topic = (cfg.get("status_topic") or "x-apple-status").strip()
     order = list((catalog.get("products") or {}).keys())
     idx = {p: i for i, p in enumerate(order)}
-    stores = {}
-    known = 0
-    for part, snap in (snapshot or {}).items():
-        if part not in idx or snap.get("status") == "unknown":
-            continue
-        known += 1
-        for sid in snap.get("stores") or []:
-            stores.setdefault(sid, []).append(idx[part])
-    if not known:
+    out = {}
+    for sid, parts in (store_map or {}).items():
+        out[sid] = sorted({idx[p] for p in parts if p in idx})
+    if not out:
         log("门店库存快照为空，跳过发布")
         return False
     payload = {
         "v": 1,
         "at": dt.datetime.now(CST).strftime("%Y-%m-%d %H:%M"),
         "p": order,
-        "s": {k: sorted(v) for k, v in stores.items()},
+        "c": int(checked or len(out)),
+        "s": out,
     }
     body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     message = {"topic": topic, "message": body, "priority": 1, "tags": ["bar_chart"]}
     if dry_run:
-        log(f"--- DRY RUN 门店快照（{len(body)} 字节）---")
+        log(f"--- DRY RUN 门店快照（{len(body)} 字节 / {len(out)} 家门店）---")
         print(body[:400])
         return True
     token = os.environ.get("APPLE_NTFY_TOKEN") or ""
@@ -778,7 +775,7 @@ def publish_status(cfg, snapshot, catalog, dry_run=False):
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             r.read()
-        log(f"门店库存快照已发布到 {topic}：{len(stores)} 家门店 / {known} 个机型，{len(body)} 字节")
+        log(f"门店库存快照已发布到 {topic}：{len(out)} 家门店，{len(body)} 字节")
         return True
     except urllib.error.HTTPError as e:
         log(f"门店快照发布失败 HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:200]}")
@@ -1007,23 +1004,69 @@ def cmd_test(cfg, dry_run=False):
     return ok
 
 
-def cmd_status(cfg, dry_run=False):
-    """全量抓一遍「门店 × 机型」库存并发布快照，不写 state、不发提醒。
+def fetch_store_stock(cfg, sid, parts, opener):
+    """查一家门店全部 SKU，返回该店有货的部件号列表。"""
+    query = {"pl": "true", "mts.0": "regular", "store": sid}
+    for i, part in enumerate(parts):
+        query[f"parts.{i}"] = part
+    url = "/shop/retail/pickup-message?" + urllib.parse.urlencode(query)
+    status, text = request(url, timeout=cfg["timeout"], opener=opener)
+    if status in (541, 429):
+        raise RateLimited(f"HTTP {status}")
+    if status != 200:
+        raise FetchError(f"HTTP {status}")
+    try:
+        data = json.loads(text)
+    except ValueError as e:
+        raise FetchError(f"响应不是 JSON：{e}") from e
+    rows = (data.get("body") or {}).get("stores") or []
+    if not rows:
+        raise FetchError("接口未返回门店")
+    avail = rows[0].get("partsAvailability") or {}
+    return [p for p in parts
+            if str((avail.get(p) or {}).get("pickupDisplay")) == "available"]
 
-    配置台详情页需要 49 家门店各自的库存，但页面自己去逐店查会立刻触发苹果的
-    541 限频，所以单独跑这一条链路：一轮 49 个请求，与提醒链路互不影响。
+
+def cmd_status(cfg, dry_run=False):
+    """全量抓「门店 × 机型」库存并发布快照，不写 state、不发提醒。
+
+    苹果对同一出口 IP 的短时请求数很敏感（实测约 20 个就 541），所以：
+      - 门店顺序按小时轮转，单轮没抓完也不会总从同一批门店开始；
+      - 间隔 status_gap_s 秒，尽量不触发限频；
+      - 一旦遇到 541 立刻停手，把已经抓到的门店照常发布。
+    配置台后端会把最近多轮按门店合并，几轮之后就是完整覆盖。
     """
     catalog = load_catalog()
     parts = sorted((catalog.get("products") or {}).keys())
     stores = list((catalog.get("stores") or {}).keys())
     if not parts or not stores:
         raise SystemExit("catalog 为空，先跑 --refresh-catalog")
-    full = json.loads(json.dumps(cfg))
-    full["pickup"]["fallback_stores"] = stores
-    full["pickup"]["fallback_max_parts"] = len(parts)
-    opener = warm_opener(full)
-    snapshot = fetch_by_retail(full, catalog, parts, opener)
-    return publish_status(full, snapshot, catalog, dry_run=dry_run)
+    gap = float(cfg.get("status_gap_s") or 3.5)
+    batch = int(cfg.get("status_batch") or len(stores))
+    start = (int(time.time() // 3600) * 17) % len(stores)
+    rotated = stores[start:] + stores[:start]
+    picks = rotated[:batch]
+
+    opener = warm_opener(cfg)
+    store_map, failed, limited = {}, [], False
+    for sid in picks:
+        try:
+            store_map[sid] = fetch_store_stock(cfg, sid, parts, opener)
+        except RateLimited as e:
+            limited = True
+            log(f"门店 {sid} 被限频（{e}），停止本轮，已抓到 {len(store_map)} 家")
+            break
+        except Exception as e:
+            failed.append(sid)
+            log(f"门店 {sid} 抓取失败（{e}），跳过")
+        time.sleep(gap)
+
+    if not store_map:
+        raise FetchError("本轮没有抓到任何门店")
+    ok = publish_status(cfg, store_map, catalog, checked=len(picks), dry_run=dry_run)
+    log(f"门店快照：成功 {len(store_map)} / 计划 {len(picks)}，失败 {len(failed)}，"
+        f"限频={limited}，间隔 {gap}s")
+    return ok
 
 
 def main():
