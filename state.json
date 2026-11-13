@@ -6,124 +6,48 @@
       "last_notified": 0,
       "status": "available",
       "stores": [
-        "R643",
-        "R574"
+        "R577"
       ]
     },
     "MG334CH/A": {
       "last_notified": 0,
       "status": "available",
       "stores": [
-        "R703",
-        "R493",
-        "R643",
-        "R574",
-        "R765",
-        "R688",
-        "R471",
-        "R532"
+        "R320",
+        "R389",
+        "R577",
+        "R761"
       ]
     },
     "MG344CH/A": {
       "last_notified": 0,
       "status": "available",
       "stores": [
-        "R703",
-        "R493",
-        "R574",
-        "R765",
-        "R688"
+        "R320",
+        "R761"
       ]
     },
     "MG364CH/A": {
       "last_notified": 0,
       "status": "available",
       "stores": [
-        "R703",
-        "R493",
-        "R643",
-        "R574",
-        "R765",
-        "R688",
-        "R471",
-        "R532"
+        "R320",
+        "R389",
+        "R577",
+        "R761"
       ]
     },
     "MG374CH/A": {
       "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R574",
-        "R532"
-      ]
-    },
-    "MG394CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R765",
-        "R688",
-        "R471"
-      ]
-    },
-    "MG3A4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R493",
-        "R471"
-      ]
-    },
-    "MG3C4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R493",
-        "R643"
-      ]
-    },
-    "MG3D4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R688"
-      ]
-    },
-    "MG3E4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R493",
-        "R643",
-        "R574",
-        "R765",
-        "R471"
-      ]
-    },
-    "MG3F4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R643",
-        "R765"
-      ]
-    },
-    "MG3G4CH/A": {
-      "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R703",
-        "R493",
-        "R643",
-        "R574",
-        "R765",
-        "R532"
-      ]
+      "status": "unavailable",
+      "stores": []
     },
     "MK2M4CH/A": {
       "last_notified": 0,
-      "status": "unavailable",
-      "stores": []
+      "status": "available",
+      "stores": [
+        "R577"
+      ]
     },
     "MK2N4CH/A": {
       "last_notified": 0,
@@ -132,10 +56,8 @@
     },
     "MK2P4CH/A": {
       "last_notified": 0,
-      "status": "available",
-      "stores": [
-        "R765"
-      ]
+      "status": "unavailable",
+      "stores": []
     },
     "MK2Q4CH/A": {
       "last_notified": 0,
@@ -146,23 +68,9 @@
       "last_notified": 0,
       "status": "unavailable",
       "stores": []
-    },
-    "MK2U4CH/A": {
-      "last_notified": 0,
-      "status": "unavailable",
-      "stores": []
-    },
-    "MK2V4CH/A": {
-      "last_notified": 0,
-      "status": "unavailable",
-      "stores": []
-    },
-    "MK2W4CH/A": {
-      "last_notified": 0,
-      "status": "unavailable",
-      "stores": []
     }
   },
+  "pickup_mode": "retail",
   "refurb": {
     "accessories/FDF04CH/A": {
       "category": "accessories",

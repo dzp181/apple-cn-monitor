@@ -12,8 +12,9 @@ on:
         required: false
         default: 'false'
   schedule:
-    # 每 30 分钟一轮。单轮只有约 7 个请求（官翻 5 + 自提 2），刻意克制。
-    - cron: '*/30 * * * *'
+    # 每小时一轮。官翻价格与门店库存变化都不快，刻意保持低频：
+    # 单轮境外约 11 个请求（官翻 5 + 预热 1 + 新版探测 1 + 兜底门店 4）。
+    - cron: '30 * * * *'
 
 permissions:
   contents: write          # state.json / catalog.json / archive 需要回写

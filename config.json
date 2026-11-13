@@ -16,6 +16,8 @@
     "families": ["iphone-duo", "iphone-air"],
     "max_parts": 20,
     "store_whitelist": [],
+    "fallback_stores": ["R320", "R389", "R577", "R761"],
+    "fallback_max_parts": 10,
     "reminder_hours": 6,
     "remind_while_in_stock": false
   }

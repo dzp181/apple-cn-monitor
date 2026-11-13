@@ -388,28 +388,26 @@ def load_catalog():
 
 # ---------------------------------------------------------------- 自提库存
 
-def fetch_pickup(cfg, catalog):
-    """一次请求可拿到多个 SKU 在全部直营店的有货门店列表，无需按门店轮询。"""
-    parts = sorted((catalog.get("products") or {}).keys())
-    limit = int(cfg.get("pickup", {}).get("max_parts", 20))
-    parts = parts[:limit]
-    if not parts:
-        raise FetchError("catalog 里没有 SKU，请先跑 --refresh-catalog")
-
-    whitelist = set(cfg.get("pickup", {}).get("store_whitelist") or [])
-    snapshot = {}
-
-    # 先访问购买页建立带地区 cookie 的会话。境外出口 IP 可能被 Apple 定位到
-    # 中国大陆之外，导致 availability 返回空的 eligibleStores；预热能尽量让
-    # 后续查询落在大陆门店上下文里（同时更像真实浏览器，不额外轮询门店）。
+def warm_opener(cfg):
+    """先访问购买页建立带地区 cookie 的会话，行为更接近真实浏览器。"""
     jar = http.cookiejar.CookieJar()
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
     try:
-        warm_code, _ = request("/shop/buy-iphone", timeout=cfg["timeout"], opener=opener)
-        log(f"自提会话预热 HTTP {warm_code}，会话 cookie {len(jar)} 个")
+        code, _ = request("/shop/buy-iphone", timeout=cfg["timeout"], opener=opener)
+        log(f"自提会话预热 HTTP {code}，会话 cookie {len(jar)} 个")
     except Exception as e:
-        log(f"自提会话预热失败（忽略，继续查询）：{e}")
+        log(f"自提会话预热失败（忽略）：{e}")
+    return opener
 
+
+def fetch_by_sba(cfg, parts, whitelist, opener):
+    """2026 新版接口：一次拿到多个 SKU 在全部直营店的有货门店列表。
+
+    返回 (snapshot, has_context)。Apple 按出口 IP 定位门店，境外 runner 上
+    响应里 storeId / eligibleStores / 配送地区全为空，此时 has_context=False，
+    调用方应切换到显式指定门店的兜底接口，绝不能把空结果当成「全无货」。
+    """
+    snapshot = {}
     diag = None
     for offset in range(0, len(parts), 10):
         batch = parts[offset:offset + 10]
@@ -421,17 +419,17 @@ def fetch_pickup(cfg, catalog):
         if status in (541, 429):
             raise RateLimited(f"HTTP {status}")
         if status != 200:
-            raise FetchError(f"自提接口 HTTP {status}")
+            raise FetchError(f"新版自提接口 HTTP {status}")
         try:
             data = json.loads(text)
             content = (data.get("body") or {}).get("content") or []
             head_status = str((data.get("head") or {}).get("status") or "")
         except ValueError as e:
-            raise FetchError(f"自提响应不是 JSON：{e}") from e
+            raise FetchError(f"新版自提响应不是 JSON：{e}") from e
         if head_status and head_status != "200":
-            raise FetchError(f"自提接口内部状态 {head_status}")
+            raise FetchError(f"新版自提接口内部状态 {head_status}")
         if not content:
-            raise FetchError("自提接口返回空 content（型号可能已停售）")
+            raise FetchError("新版自提接口返回空 content（型号可能已停售）")
 
         if diag is None:
             sample = content[0]
@@ -439,13 +437,20 @@ def fetch_pickup(cfg, catalog):
             diag = {"store_id": sample.get("storeId"),
                     "region": f"{addr.get('state') or '-'}/{addr.get('city') or '-'}",
                     "eligible": sample.get("eligibleStores")}
+            context = any(
+                str(c.get("storeId") or "") or str(c.get("eligibleStores") or "") or
+                (((c.get("deliveryMessage") or {}).get("address") or {}))
+                for c in content
+            )
+            if not context:
+                log("新版自提接口未返回中国大陆门店上下文（境外出口 IP 常见）")
+                return {}, False, diag
 
         by_part = {str(c.get("partNumber") or "").upper(): c for c in content}
         for part in batch:
             item = by_part.get(part)
             if item is None:
-                # 三态里的「未知」：不能当无货，也不能据此推送
-                snapshot[part] = {"status": "unknown", "stores": []}
+                snapshot[part] = {"status": "unknown", "stores": [], "any_count": 0}
                 continue
             eligible = [x.strip() for x in str(item.get("eligibleStores") or "").split(",")
                         if x.strip()]
@@ -457,15 +462,115 @@ def fetch_pickup(cfg, catalog):
                 "any_count": int(item.get("partAvailableStoresCount") or 0),
             }
         if offset + 10 < len(parts):
-            time.sleep(1.0)  # 批次之间留一口气
+            time.sleep(1.0)
 
     if diag:
         log(f"自提诊断：接口门店 {diag['store_id']}，配送地区 {diag['region']}，"
             f"首条 eligibleStores={diag['eligible']!r}")
-    if not any(v["status"] == "available" for v in snapshot.values()):
-        log("自提：本轮 0 家有货。若上面诊断的地区不在中国大陆，说明出口 IP 被地域路由；"
-            "此时数据不可用，脚本只记 unavailable，不会误报。")
+    return snapshot, True, diag
+
+
+def pick_fallback_parts(catalog, limit):
+    """按产品族均衡取样，避免兜底模式只覆盖一个系列。"""
+    groups = {}
+    for part, info in (catalog.get("products") or {}).items():
+        groups.setdefault(info.get("family", ""), []).append(part)
+    for values in groups.values():
+        values.sort()
+    out = []
+    while len(out) < limit:
+        added = False
+        for fam in sorted(groups):
+            if groups[fam] and len(out) < limit:
+                out.append(groups[fam].pop(0))
+                added = True
+        if not added:
+            break
+    return out
+
+
+def fetch_by_retail(cfg, catalog, parts, opener):
+    """显式指定门店的兜底接口：不依赖 IP 定位，境外 runner 同样可用。
+
+    每家门店一次请求可带 10 个 SKU，返回 partsAvailability[sku].pickupDisplay。
+    为克制频率只查配置里的少数重点门店，未参与查询的 SKU 一律标 unknown。
+    """
+    pc = cfg["pickup"]
+    stores = pc.get("fallback_stores") or []
+    if not stores:
+        raise FetchError("没有配置 fallback_stores，无法在境外环境查自提")
+    use = pick_fallback_parts(catalog, int(pc.get("fallback_max_parts", 10)))
+    snapshot = {p: {"status": "unknown", "stores": [], "any_count": 0} for p in parts}
+    for part in use:
+        snapshot[part]["status"] = "unavailable"
+    seen = {part: False for part in use}
+    ok_stores = 0
+
+    for store in stores:
+        query = {"pl": "true", "mts.0": "regular", "store": store}
+        for i, part in enumerate(use):
+            query[f"parts.{i}"] = part
+        url = "/shop/retail/pickup-message?" + urllib.parse.urlencode(query)
+        status, text = request(url, timeout=cfg["timeout"], opener=opener)
+        if status in (541, 429):
+            raise RateLimited(f"HTTP {status}")
+        if status != 200:
+            log(f"兜底门店 {store}：HTTP {status}，跳过")
+            continue
+        try:
+            data = json.loads(text)
+            rows = (data.get("body") or {}).get("stores") or []
+        except ValueError:
+            log(f"兜底门店 {store}：响应不是 JSON，跳过")
+            continue
+        if not rows:
+            log(f"兜底门店 {store}：接口未返回门店，跳过")
+            continue
+        ok_stores += 1
+        for row in rows:
+            code = str(row.get("storeNumber") or store)
+            availability = row.get("partsAvailability") or {}
+            for part in use:
+                info = availability.get(part)
+                if not isinstance(info, dict):
+                    continue
+                display = info.get("pickupDisplay")
+                if display in ("available", "unavailable", "ineligible"):
+                    seen[part] = True
+                if display == "available":
+                    snapshot[part]["status"] = "available"
+                    if code not in snapshot[part]["stores"]:
+                        snapshot[part]["stores"].append(code)
+        if store != stores[-1]:
+            time.sleep(0.8)
+
+    if ok_stores == 0:
+        raise FetchError("显式门店接口未返回任何门店，本轮自提数据不可用")
+    for part in use:
+        # 三态：某 SKU 在所有门店都没返回明确状态时，绝不能判成无货
+        if not seen[part] and snapshot[part]["status"] != "available":
+            snapshot[part]["status"] = "unknown"
+        snapshot[part]["any_count"] = len(snapshot[part]["stores"])
+    available = sum(1 for v in snapshot.values() if v["status"] == "available")
+    log(f"自提兜底：{ok_stores}/{len(stores)} 家门店，{len(use)} 个 SKU，{available} 个有货")
     return snapshot
+
+
+def fetch_pickup(cfg, catalog):
+    """返回 (snapshot, mode)。mode = sba | retail，用于检测跨环境数据源切换。"""
+    parts = sorted((catalog.get("products") or {}).keys())
+    parts = parts[:int(cfg.get("pickup", {}).get("max_parts", 20))]
+    if not parts:
+        raise FetchError("catalog 里没有 SKU，请先跑 --refresh-catalog")
+
+    whitelist = set(cfg.get("pickup", {}).get("store_whitelist") or [])
+    opener = warm_opener(cfg)
+    snapshot, has_context, _ = fetch_by_sba(cfg, parts, whitelist, opener)
+    if has_context:
+        return snapshot, "sba"
+
+    log("切换显式门店兜底接口（新版接口依赖出口 IP 定位，境外拿不到大陆门店）")
+    return fetch_by_retail(cfg, catalog, parts, opener), "retail"
 
 
 # ---------------------------------------------------------------- 事件判定
@@ -703,14 +808,15 @@ def cmd_init(cfg):
                                 "title": product["title"], "price": product["price"],
                                 "url": product["url"], "gone": False, "target_tag": ""}
     try:
-        snapshot = fetch_pickup(cfg, catalog)
+        snapshot, mode = fetch_pickup(cfg, catalog)
         for part, snap in snapshot.items():
             if snap["status"] != "unknown":
                 state["pickup"][part] = {"status": snap["status"],
                                          "stores": snap["stores"],
                                          "last_notified": 0}
+        state["pickup_mode"] = mode
         in_stock = sum(1 for v in snapshot.values() if v["status"] == "available")
-        log(f"自提基线：{len(snapshot)} 个 SKU，当前 {in_stock} 个有货")
+        log(f"自提基线（{mode}）：{len(snapshot)} 个 SKU，当前 {in_stock} 个有货")
     except (RateLimited, FetchError) as e:
         log(f"自提基线未建立（{e}），下轮自动补齐，不影响官翻")
 
@@ -743,6 +849,7 @@ def run_once(cfg, dry_run=False, max_override=None):
     snapshot = {}
     current = {}
     ok_categories = set()
+    mode_changed = False
 
     # ---- 官翻：静态 CDN 页，不受 541 影响
     current, ok_categories = fetch_refurb(cfg)
@@ -760,11 +867,31 @@ def run_once(cfg, dry_run=False, max_override=None):
         pass
     else:
         try:
-            snapshot = fetch_pickup(cfg, catalog)
-            pickup_events = diff_pickup(state, snapshot, cfg)
-            events.extend(pickup_events)
+            snapshot, mode = fetch_pickup(cfg, catalog)
+            prev_mode = state.get("pickup_mode") or ""
             in_stock = sum(1 for v in snapshot.values() if v["status"] == "available")
-            log(f"自提：{len(snapshot)} 个 SKU，{in_stock} 个有货，{len(pickup_events)} 个候选事件")
+            if prev_mode and prev_mode != mode:
+                # 两种数据源覆盖的门店范围不同（全大陆 vs 少数重点门店），
+                # 切换时只重建基线，避免「全无货→有货」的跨环境误报。
+                log(f"自提数据源 {prev_mode} → {mode}，本轮只重建基线不推送")
+                rebuilt = {}
+                for part, snap in snapshot.items():
+                    if snap["status"] == "unknown":
+                        continue
+                    old_row = (state.get("pickup") or {}).get(part, {})
+                    rebuilt[part] = {"status": snap["status"], "stores": snap["stores"],
+                                     "last_notified": int(old_row.get("last_notified") or 0)}
+                state["pickup"] = rebuilt
+                snapshot = {}
+                pickup_events = []
+                mode_changed = True
+            else:
+                pickup_events = diff_pickup(state, snapshot, cfg)
+                events.extend(pickup_events)
+                if not prev_mode:
+                    mode_changed = True
+            state["pickup_mode"] = mode
+            log(f"自提（{mode}）：{in_stock} 个有货，{len(pickup_events)} 个候选事件")
         except RateLimited as e:
             state["cooldown_until"] = epoch + 900
             log(f"自提被限频（{e}），进入 15 分钟冷却；状态不变，不当无货")
@@ -801,8 +928,8 @@ def run_once(cfg, dry_run=False, max_override=None):
     apply_pickup_state(state, snapshot, events_by_part, pushed_pickup)
     state["last_run"] = now_ts()
 
-    # 只在有事件或冷却变化时回写，避免无意义的 CI commit
-    if events or state.get("cooldown_until") != load_json(STATE_PATH, {}).get("cooldown_until"):
+    # 只在有事件 / 冷却变化 / 数据源切换时回写，避免无意义的 CI commit
+    if events or mode_changed or state.get("cooldown_until") != load_json(STATE_PATH, {}).get("cooldown_until"):
         save_json(STATE_PATH, state)
         if events:
             pushed = pushed_refurb | pushed_pickup
@@ -810,7 +937,7 @@ def run_once(cfg, dry_run=False, max_override=None):
         log(f"state 已更新并归档 {len(events)} 个事件")
     else:
         state["last_run"] = load_json(STATE_PATH, {}).get("last_run", "")
-        log("本轮无事件、无冷却变化，state 保持不变（不产生 commit）")
+        log("本轮无事件、无冷却 / 数据源变化，state 保持不变（不产生 commit）")
 
 
 def cmd_test(cfg, dry_run=False):
