@@ -276,6 +276,107 @@
         "MG3E4CH/A"
       ]
     },
+    "R579": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A"
+      ]
+    },
+    "R580": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R581": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG3A4CH/A",
+        "MG3E4CH/A"
+      ]
+    },
+    "R609": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG3E4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R617": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MK2P4CH/A"
+      ]
+    },
+    "R637": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG394CH/A",
+        "MG3D4CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R638": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG344CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R639": {
+      "at": {},
+      "parts": [
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG374CH/A",
+        "MG394CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
+    "R643": {
+      "at": {},
+      "parts": [
+        "MG314CH/A",
+        "MG334CH/A",
+        "MG364CH/A",
+        "MG3C4CH/A",
+        "MG3E4CH/A",
+        "MG3F4CH/A",
+        "MG3G4CH/A"
+      ]
+    },
     "R644": {
       "at": {},
       "parts": [
@@ -447,6 +548,6 @@
       ]
     }
   },
-  "updated": "2026-11-13 17:32 北京时间",
+  "updated": "2026-11-13 17:52 北京时间",
   "v": 2
 }
