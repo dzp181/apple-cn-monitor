@@ -19,6 +19,7 @@
     "target_rules": []
   },
   "pickup": {
+    "enabled": false,
     "families": [
       "iphone-duo",
       "iphone-air"
@@ -35,7 +36,13 @@
     "reminder_hours": 6,
     "remind_while_in_stock": false
   },
+  "store_notify": {
+    "enabled": true,
+    "max_stores_per_run": 3,
+    "part_cooldown_h": 6
+  },
   "status_topic": "x-apple-status",
   "status_gap_s": 5,
-  "status_batch": 20
+  "status_batch": 20,
+  "status_slot_s": 1200
 }

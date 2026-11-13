@@ -1,8 +1,11 @@
 # apple-cn-monitor
 
-Apple **中国大陆**官网的「官方翻新降价 / 上架」与「直营店到店取货有货」监控，只往一个 ntfy 主题发提醒。零第三方 Python 依赖，GitHub Actions 定时跑，不下单、不加购、不抢购。
+Apple **中国大陆**官网的「官方翻新降价 / 上架」与「直营店到店取货有货」监控。零第三方 Python 依赖，GitHub Actions 定时跑，不下单、不加购、不抢购。
 
-订阅地址：`http://112.74.95.74:8858/x-apple-refurb`（主题 `x-apple-refurb`）
+两类主题，订阅哪个就只收哪个：
+
+- **官翻**：`http://112.74.95.74:8858/x-apple-refurb` —— 降价 / 新上架 / 到目标价
+- **门店**：`http://112.74.95.74:8858/x-apple-store-<门店编号>`，49 家直营店各一个主题，例如 `x-apple-store-r320`（北京 · 三里屯）；订哪家就只收哪家店的有货提醒
 
 与 `x2ding`（X 监控）、`xq-dadao`（雪球监控）完全独立：独立仓库、独立 state、独立主题，互不影响。
 
@@ -10,12 +13,12 @@ Apple **中国大陆**官网的「官方翻新降价 / 上架」与「直营店�
 
 ## 监控什么
 
-| 链路 | 数据源 | 触发提醒的事件 |
-|---|---|---|
-| 官翻价格 | `www.apple.com.cn/shop/refurbished/{mac,ipad,watch,accessories,homepod}` 页面内嵌的 `REFURB_GRID_BOOTSTRAP` | **降价**（价格低于上次记录）、**新上架**、**达到目标价**（`target_rules` 配了才有） |
-| 直营店自提 | 优先 `GET /shop/sba/availability-message`（2026 新版，一次拿全量有货门店）；境外 IP 自动切 `GET /shop/retail/pickup-message?store=<门店>`（显式指定门店，不依赖 IP 定位） | **无货 / 未知 → 有货** 的跃迁；持续有货默认不重复提醒 |
+| 链路 | 数据源 | 触发提醒的事件 | 推到哪 |
+|---|---|---|---|
+| 官翻价格 | `www.apple.com.cn/shop/refurbished/{mac,ipad,watch,accessories,homepod}` 页面内嵌的 `REFURB_GRID_BOOTSTRAP` | **降价**（价格低于上次记录）、**新上架**、**达到目标价**（`target_rules` 配了才有） | `x-apple-refurb` |
+| 直营店自提 | 优先 `GET /shop/sba/availability-message`（2026 新版，一次拿全量有货门店）；境外 IP 自动切 `GET /shop/retail/pickup-message?store=<门店>`（显式指定门店，不依赖 IP 定位） | **该店无货 / 未知 → 有货** 的跃迁；持续有货不重复提醒 | `x-apple-store-<门店编号>`，一店一主题 |
 
-两条链路的消息都发到同一个主题 `x-apple-refurb`，用标题前缀「官翻降价 / 官翻新上架 / 官翻到目标价 / 到店取货有货」和 ntfy tags 区分。要拆成两个主题，复制一份 config 改 `ntfy_topic` 即可。
+门店主题名由门店编号直接拼出来（`store_topic()`），不另存映射表；配置台也是同一个规则，所以加店 / 换店只要刷新目录即可。
 
 **范围**：只做中国大陆。CN 官翻店**没有 iPhone 和 Apple TV**（请求 404），AirPods 分类存在但当前为空（`tiles: null`），所以默认只抓实测有商品的 5 类：Mac / iPad / Watch / 配件 / HomePod。自提侧监控当前在售 iPhone 机型在中国大陆全部直营店（实测 49 家）的取货库存。第三方电商（京东、拼多多等）**不在范围内**。
 
@@ -43,7 +46,7 @@ cp local.env.example local.env     # 填入 ntfy 发布令牌，文件名已被 
 | `--list-stores` | 联网打印中国大陆直营店代码与名称 |
 | `--list-products` | 打印当前监控的 SKU 与名称 |
 | `--refresh-catalog` | 重建门店 / SKU 快照（新品发布后跑一次） |
-| `--status` | 全量抓 49 家门店 × 全部机型的库存，只发布到 `x-apple-status` 主题（供配置台详情页展示），不写 `state.json`、不发提醒 |
+| `--status` | 抓一批门店（默认 20 家）× 全部机型的库存：发布 `x-apple-status` 快照 + 把「新有货」按门店推到 `x-apple-store-<编号>`；不写 `state.json`，基线单独存 `data/status_seen.json` |
 | `--max N` | 覆盖单轮推送上限（默认 3） |
 | `python3 selftest.py` | 离线自检：不联网、不推送、不改 state，验证降价 / 上架 / 目标价 / 有货跃迁 / 失败保护 / 重试语义共 18 项 |
 
@@ -109,24 +112,46 @@ cp local.env.example local.env     # 填入 ntfy 发布令牌，文件名已被 
 
 一小时一轮，即每小时 8–11 个请求。官翻列表页是 CDN 静态资源（`max-age=120`），自提接口是唯一会触发 Apple 限频的地方。想再省请求就把 `fallback_stores` 减到 1–2 家。
 
-### 门店库存快照（`x-apple-status`）
+### 门店库存：一店一主题（`x-apple-store-*`）
 
-`status.yml` 每小时的第 10 分钟单独跑一轮 `--status`：49 家直营店 × 全部 20 个机型，一店一请求、间隔 1.2 秒，约 2.5 分钟，把结果压成紧凑 JSON 发到 `x-apple-status` 主题：
+`status.yml` 每 20 分钟跑一趟 `--status`，一轮抓 20 家门店 × 全部 20 个机型（一店一请求、间隔 5 秒，约 2.5 分钟），三趟正好轮完 **49 家直营店**。每趟做两件事：
+
+1. 把结果压成紧凑 JSON 发到 `x-apple-status` 主题（页面已不依赖，留作原始数据 / 排查用）：
 
 ```json
-{"v":1,"at":"2026-11-13 16:10","p":["MG314CH/A","..."],"s":{"R320":[0,1,2,5]}}
+{"v":1,"at":"2026-11-13 16:10","p":["MG314CH/A","..."],"c":20,"s":{"R320":[0,1,2,5]}}
 ```
 
-`p` 是部件号数组，`s` 是「门店编号 → 有货机型下标」，整体约 1.5 KB。X 监控配置台的详情页通过自己的后端读取这条消息来展示每家门店的库存，**页面不直连苹果**——否则一次全量刷新就是几十个请求，必然 541。这条链路不写 `state.json`、不发提醒号，失败不影响提醒链路。主题前缀仍是 `x-`，现有发布令牌可直接使用。
+`p` 是部件号数组，`s` 是「门店编号 → 有货机型下标」，`c` 是本轮计划门店数，整体约 1.5 KB。
 
-### 怎么定时跑（重要）
+2. 和 `data/status_seen.json` 里的基线比对，把**这家店新出现的「有货」**推到 `x-apple-store-<门店编号>` —— 一家店一个主题，一家店一条消息：
+
+```
+北京 · 三里屯
+
+新可到店取货 2 款：
+· iPhone Air · 深空黑色 · 256 GB
+· iPhone Air · 云白色 · 256 GB
+
+点开可看这家店的实时库存与取货时间
+
+2026-11-13 17:02 北京时间
+```
+
+订阅者只订自己关心的门店，所以「哪家店有货」这件事不需要页面再整盘查一遍：订阅本身就是筛选器。
+
+防刷屏的三道刹车：`store_notify.part_cooldown_h`（同店同款 6 小时内只推一次）、`store_notify.max_stores_per_run`（单轮最多 3 家店，多出的顺延）、门店首次入库只建基线不推送。推送失败或顺延的门店会从基线回退，下一轮重新判定，不会丢。
+
+### 怎么定时跑（重要）### 怎么定时跑（重要）
 
 GitHub 自带 `schedule` 在这个账号下**从来没触发过**（`dzp181/apple-cn-monitor` 与 `dzp181/x2ding` 都是 0 条 schedule 运行，只有手动 dispatch），所以两个工作流都去掉了 `on.schedule`，改由国内服务器 crontab 调 `workflow_dispatch`：
 
 ```cron
-10 * * * * /home/zhangsan/bin/apple-trigger.sh status.yml   # 门店库存快照
-30 * * * * /home/zhangsan/bin/apple-trigger.sh apple.yml    # 官翻 / 自提提醒
+10,30,50 * * * * /home/zhangsan/bin/apple-trigger.sh status.yml   # 门店库存快照 + 有货提醒
+30 * * * * /home/zhangsan/bin/apple-trigger.sh apple.yml          # 官翻降价 / 上架
 ```
+
+门店链路之所以要三趟而不是一趟：苹果按出口 IP 限频，单次连发 20 多个请求就 541，所以一趟只抓 20 家、起点按 20 分钟时间片整体平移 20 家，三趟首尾相接正好覆盖 49 家，每家的数据最多滞后约 1 小时。
 
 脚本 `~/bin/apple-trigger.sh` 依赖 `~/.x2ding.gh-token`（scope 含 `repo` + `workflow`），日志 `~/apple-trigger.log`。少了这台机器就不会自动跑，只能手动点 Actions。
 
@@ -139,6 +164,7 @@ GitHub 自带 `schedule` 在这个账号下**从来没触发过**（`dzp181/appl
 - **地域护栏**：官翻商品自报货币不是 CNY 时整类丢弃，防止境外出口 IP 被重定向到别国站点后产生大面积误报。
 - 批次之间 sleep 1 秒，分类之间 sleep 0.6 秒；不并发、不轮换 UA（稳定的浏览器 UA 比随机 UA 更像正常流量）。
 - 单轮最多 3 条推送；推送失败的条目**不更新状态**，下一轮自动重试。
+- **门店有货提醒不刷屏**：只在「该店该款上次没货 → 这次有货」时推；同店同款 6 小时冷却；单轮最多 3 家店；门店首次入库只建基线。`pickup.enabled=false` 关闭了老的 4 店 / 10 SKU 兜底链路（只留官翻），避免同一条有货被两条链路各推一次。
 
 ---
 
@@ -147,6 +173,7 @@ GitHub 自带 `schedule` 在这个账号下**从来没触发过**（`dzp181/appl
 | 文件 | 内容 |
 |---|---|
 | `state.json` | 官翻每件商品的当前价格 / 标题 / 链接 / `gone` 标记；每个 SKU 的自提三态与上次提醒时间；541 冷却截止时间戳 |
+| `data/status_seen.json` | 门店链路基线：`stores[门店] = {parts: [上次有货的 SKU], at: {SKU: 上次推送时间}}`，前者用于判定「新有货」，后者用于 6 小时冷却 |
 | `data/catalog.json` | 门店代码→名称、SKU→名称与购买页直达链接的快照，约每周或新品发布时刷新一次 |
 | `archive/events-YYYY-MM.jsonl` | 每月一个事件文件，逐行记录降价 / 上架 / 目标价 / 有货事件及 `pushed` 结果 |
 
@@ -156,12 +183,13 @@ CI 每轮把这三个位置一起 `git add`，有变化才提交；push 带 `git
 
 ## 已知边界与风险
 
-1. **境外出口 IP（已实测并解决）**：2026-11-13 在 GitHub Actions 上实测，官翻 5 类全部正常（422 件），但新版自提接口返回 `storeId` / `eligibleStores` / 配送地区全空——Apple 不给境外 IP 中国大陆门店上下文，cookie 预热也无法绕过。已实现双接口自动切换：境外自动改用显式指定门店的 `retail/pickup-message`，按 4 家重点门店查询。代价是境外只覆盖这 4 家（大陆出口则是全 49 家），且只看 10 个 SKU；在 `fallback_stores` 里加门店会线性增加请求数。
-2. **CN 官翻无 iPhone**：这是 Apple 中国官网的现状，不是 bug。想盯 iPhone 官翻只能换地区站点。
-3. **接口会变**：门店用 GraphQL persisted query（hash 写在 `apple_push.py` 顶部）、SKU 用购买页 `productSelectionData`、自提用 2026 版 `availability-message`（老的 `fulfillment-messages` / `retail/pickup-message` 已失效）。Apple 改版时脚本会记 warning 并保留旧状态，不会乱推；届时按 `--list-stores` / `--list-products` 的输出更新 slug 即可。
-4. **GitHub Actions 60 天无活动会停用 schedule**：偶尔手动触发一次即可恢复。
-5. **官翻 CDN 缓存 120 秒**：30 分钟一轮远大于这个下限，不会读到过期快照。
-6. 只覆盖同步到官网页面的信息，**不含第三方电商价格、不含国补 / 优惠券到手价**。
+1. **境外出口 IP（已实测并解决）**：2026-11-13 在 GitHub Actions 上实测，官翻 5 类全部正常（422 件），但新版自提接口返回 `storeId` / `eligibleStores` / 配送地区全空——Apple 不给境外 IP 中国大陆门店上下文，cookie 预热也无法绕过。现在门店库存走的是显式门店接口 `retail/pickup-message?store=<门店>`（一店一请求，境外 runner 同样可用），按批轮转覆盖全部 49 家；老的 4 店 / 10 SKU 兜底链路已关闭（`pickup.enabled=false`）。
+2. **门店数据最多滞后约 1 小时**：一轮只抓 20 家（限频红线在 20–30 个请求），三趟轮完 49 家；被 541 打断时本轮只发布已抓到的门店，剩余门店下一趟补。
+3. **CN 官翻无 iPhone**：这是 Apple 中国官网的现状，不是 bug。想盯 iPhone 官翻只能换地区站点。
+4. **接口会变**：门店用 GraphQL persisted query（hash 写在 `apple_push.py` 顶部）、SKU 用购买页 `productSelectionData`、自提用 2026 版 `availability-message`（老的 `fulfillment-messages` / `retail/pickup-message` 已失效）。Apple 改版时脚本会记 warning 并保留旧状态，不会乱推；届时按 `--list-stores` / `--list-products` 的输出更新 slug 即可。
+5. **GitHub Actions 60 天无活动会停用 schedule**：偶尔手动触发一次即可恢复。
+6. **官翻 CDN 缓存 120 秒**：30 分钟一轮远大于这个下限，不会读到过期快照。
+7. 只覆盖同步到官网页面的信息，**不含第三方电商价格、不含国补 / 优惠券到手价**。
 
 ---
 

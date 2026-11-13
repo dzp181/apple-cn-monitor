@@ -52,6 +52,9 @@ GRAPHQL_HASH = "d95caa379372fe166f35bb89fe8e018e21781c66ee815ee3f68105f36ff4b1d8
 
 CONFIG_PATH = ROOT / "config.json"
 STATE_PATH = ROOT / "state.json"
+# 全量门店链路自己的基线：记每个门店上一次查到哪些 SKU 有货。
+# 单独一个文件，避免和提醒链路（state.json）抢同一次提交。
+STATUS_SEEN_PATH = ROOT / "data" / "status_seen.json"
 CATALOG_PATH = ROOT / "data" / "catalog.json"
 ARCHIVE_DIR = ROOT / "archive"
 
@@ -786,6 +789,157 @@ def publish_status(cfg, store_map, catalog, checked=None, dry_run=False):
         return False
 
 
+# ---------------------------------------------------------------- 门店主题推送
+
+STORE_TOPIC_PREFIX = "x-apple-store-"
+
+
+def store_topic(code):
+    """一家门店一个主题：订阅哪家店，就只收哪家店的有货提醒。
+
+    命名必须是确定性的——配置台只靠门店编号拼出主题名，不另存映射表。
+    """
+    return STORE_TOPIC_PREFIX + str(code or "").strip().lower()
+
+
+def new_seen():
+    return {"v": 2, "updated": "", "stores": {}}
+
+
+def load_seen():
+    seen = load_json(STATUS_SEEN_PATH, {}) or {}
+    if not isinstance(seen.get("stores"), dict):
+        seen["stores"] = {}
+    seen["v"] = 2
+    return seen
+
+
+def _seen_row(seen, sid):
+    row = seen["stores"].get(sid)
+    if not isinstance(row, dict):
+        row = {"parts": [], "at": {}}
+        seen["stores"][sid] = row
+    row.setdefault("parts", [])
+    row.setdefault("at", {})
+    return row
+
+
+def diff_store_stock(seen, store_map, catalog, cfg):
+    """按「门店 × SKU」做 diff，只产出「该店之前没有 → 现在有」的变化。
+
+    单轮只抓一部分门店，所以每家店各自记一份基线，跨轮次累积。三条刹车：
+      1. 门店第一次出现（首次部署 / 新增门店）只建基线，不推送；
+      2. 同一家店的同一 SKU 在 part_cooldown_h 小时内只推一次，
+         防止「有货 ↔ 无货」来回抖动把订阅者刷爆；
+      3. 被刹车压住的 SKU 不写进基线，下次查这家店时再判一次，不会永久丢掉。
+    返回 [(门店编号, [新增有货部件号...]), ...]，按目录里的门店顺序（城市顺序）。
+    """
+    sn = cfg.get("store_notify") or {}
+    cooldown = float(sn.get("part_cooldown_h", 6)) * 3600
+    now = int(time.time())
+    known = catalog.get("stores") or {}
+    order = [s for s in known if s in (store_map or {})]
+    order += [s for s in (store_map or {}) if s not in known]
+    events, seeded = [], 0
+
+    for sid in order:
+        parts = sorted(store_map[sid])
+        if sid not in seen["stores"]:
+            seen["stores"][sid] = {"parts": parts, "at": {}}
+            seeded += 1
+            continue
+        row = _seen_row(seen, sid)
+        prev = set(row["parts"])
+        keep, newly = [], []
+        for part in parts:
+            if part in prev:
+                keep.append(part)
+                continue
+            if cooldown and now - int(row["at"].get(part) or 0) < cooldown:
+                continue          # 冷却中：不写基线，留到下次再判
+            keep.append(part)
+            newly.append(part)
+        row["parts"] = keep
+        if newly:
+            events.append((sid, newly))
+
+    if seeded:
+        log(f"库存基线：{seeded} 家门店首次入库，只建基线不推送")
+    return events
+
+
+def build_store_payload(sid, parts, catalog, cfg):
+    """一条消息只讲一家店：订阅者只关心自己那家店有没有货。"""
+    store = (catalog.get("stores") or {}).get(sid, sid)
+    products = catalog.get("products") or {}
+    names = [(products.get(p) or {}).get("name", p) for p in parts]
+    shown = names[:6]
+    more = f"\n· 另有 {len(names) - 6} 款" if len(names) > 6 else ""
+    title = f"{store} 有货 · {len(parts)} 款"
+    body = (f"{store}\n\n新可到店取货 {len(parts)} 款：\n"
+            + "\n".join(f"· {x}" for x in shown) + more + "\n\n"
+            + "点开可看这家店的实时库存与取货时间")
+    click = (products.get(parts[0]) or {}).get("buy_url") or f"{BASE}/shop/buy-iphone"
+    return {
+        "topic": store_topic(sid),
+        "title": title,
+        "message": f"{body}\n\n{now_ts()}",
+        "click": click,
+        "tags": ["shopping_cart", "bell"],
+        "priority": 4,
+    }
+
+
+def _rollback(seen, sid, parts):
+    """推送失败 / 本轮名额满了：把这几个 SKU 从基线回退，下一轮重新判定。"""
+    row = _seen_row(seen, sid)
+    drop = set(parts)
+    row["parts"] = [p for p in row["parts"] if p not in drop]
+
+
+def notify_store_stock(cfg, store_map, catalog, dry_run=False):
+    """把本轮新出现的「某店有货」按门店发到各自主题，一家店一条消息。"""
+    sn = cfg.get("store_notify") or {}
+    if not sn.get("enabled", True):
+        log("门店主题提醒已关闭（store_notify.enabled=false），只发布快照")
+        return 0
+    seen = load_seen()
+    events = diff_store_stock(seen, store_map, catalog, cfg)
+    if not events:
+        if not dry_run:
+            seen["updated"] = now_ts()
+            save_json(STATUS_SEEN_PATH, seen)
+        return 0
+
+    limit = int(sn.get("max_stores_per_run", 3))
+    picked, overflow = events[:limit], events[limit:]
+    pushed = 0
+    for sid, parts in picked:
+        payload = build_store_payload(sid, parts, catalog, cfg)
+        if publish(cfg, payload, dry_run=dry_run):
+            pushed += 1
+            if dry_run:
+                continue
+            row = _seen_row(seen, sid)
+            epoch = int(time.time())
+            for part in parts:
+                row["at"][part] = epoch
+            log(f"已推送：{payload['title']} → {payload['topic']}")
+        else:
+            _rollback(seen, sid, parts)
+            log(f"推送失败，下一轮重试：{payload['title']} → {payload['topic']}")
+
+    if overflow:
+        log(f"单轮上限 {limit} 家门店，{len(overflow)} 家顺延到下一轮")
+        for sid, parts in overflow:
+            _rollback(seen, sid, parts)
+
+    if not dry_run:
+        seen["updated"] = now_ts()
+        save_json(STATUS_SEEN_PATH, seen)
+    return pushed
+
+
 # ---------------------------------------------------------------- 状态与归档
 
 def apply_refurb_state(state, current, ok_categories, gone_keys, events_by_key, pushed_keys):
@@ -913,7 +1067,11 @@ def run_once(cfg, dry_run=False, max_override=None):
         log("官翻：本轮没有成功抓取的分类，状态保持不变")
 
     # ---- 自提：有冷却就整段跳过
-    if epoch < cooldown:
+    if not (cfg.get("pickup") or {}).get("enabled", True):
+        # 自提提醒已经由全量门店链路（--status）接管，这里只保留官翻部分，
+        # 避免同一个「有货」被两条链路各推一次。
+        log("自提：已由全量门店链路接管（pickup.enabled=false），本链路只推官翻")
+    elif epoch < cooldown:
         log(f"自提：处于 541 冷却（还剩 {(cooldown - epoch) // 60} 分钟），本轮跳过")
     elif not catalog.get("products"):
         pass
@@ -1029,23 +1187,25 @@ def fetch_store_stock(cfg, sid, parts, opener):
 
 
 def cmd_status(cfg, dry_run=False):
-    """全量抓「门店 × 机型」库存并发布快照，不写 state、不发提醒。
+    """全量抓「门店 × 机型」库存：发布快照 + 推送「新有货」提醒。
 
     苹果对同一出口 IP 的短时请求数很敏感（实测约 20 个就 541），所以：
-      - 门店起点按 15 分钟时间片轮转，单轮只抓 status_batch 家；
+      - 单轮只抓 status_batch 家，起点按 status_slot_s 时间片整体平移，
+        每次跑抓下一批（20 家），按 20 分钟一趟算，一小时正好轮完 49 家；
       - 间隔 status_gap_s 秒，尽量不触发限频；
       - 一旦遇到 541 立刻停手，把已经抓到的门店照常发布。
-    配置台后端会把最近多轮按门店合并，几轮之后就是完整覆盖。
+    配置台后端会把最近多轮按门店合并，所以页面任何时候都是「最近一轮见过的库存」。
     """
     catalog = load_catalog()
     parts = sorted((catalog.get("products") or {}).keys())
     stores = list((catalog.get("stores") or {}).keys())
     if not parts or not stores:
         raise SystemExit("catalog 为空，先跑 --refresh-catalog")
-    gap = float(cfg.get("status_gap_s") or 3.5)
+    gap = float(cfg.get("status_gap_s") or 5)
     batch = int(cfg.get("status_batch") or len(stores))
-    # 按 15 分钟时间片轮转起点：单轮只抓一小批，多轮下来覆盖全部门店
-    start = (int(time.time() // 900) * 13) % len(stores)
+    slot = int(cfg.get("status_slot_s") or 1200)
+    # 起点按时间片整体平移 batch 家：连续几趟正好首尾相接，一小时覆盖全部 49 家
+    start = (int(time.time() // slot) * batch) % len(stores)
     rotated = stores[start:] + stores[:start]
     picks = rotated[:batch]
 
@@ -1066,8 +1226,9 @@ def cmd_status(cfg, dry_run=False):
     if not store_map:
         raise FetchError("本轮没有抓到任何门店")
     ok = publish_status(cfg, store_map, catalog, checked=len(picks), dry_run=dry_run)
+    pushed = notify_store_stock(cfg, store_map, catalog, dry_run=dry_run)
     log(f"门店快照：成功 {len(store_map)} / 计划 {len(picks)}，失败 {len(failed)}，"
-        f"限频={limited}，间隔 {gap}s")
+        f"限频={limited}，间隔 {gap}s，本轮有货提醒 {pushed} 条")
     return ok
 
 

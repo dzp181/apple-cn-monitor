@@ -1,16 +1,20 @@
 name: apple-cn-status
 
-# 只做一件事：把「全国直营店 × 全部机型」的库存快照发布到 ntfy 的 x-apple-status 主题，
-# 供 X 监控配置台的详情页读取。与 apple.yml（降价 / 有货提醒）完全独立：
-# 这条链路不写 state、不发提醒，失败也不影响提醒链路。
+# 全国 49 家直营店 × 20 个机型的库存：一轮抓 20 家，发布快照到 ntfy 的
+# x-apple-status 主题（配置台详情页读），同时把「新出现的有货」推到
+# x-apple-refurb 主题（订阅者手机上的提醒）。
+#
+# 苹果按出口 IP 限频（连发 20 多个就 541），所以一轮只抓 20 家、间隔 5 秒，
+# 每 20 分钟一趟，三趟正好轮完 49 家。
 
 # 定时不用 GitHub 的 schedule：这个账号下所有仓库的 cron 都没触发过，
-# 统一由国内服务器 crontab 调用 workflow_dispatch（~/bin/apple-trigger.sh status.yml，每小时 :10）。
+# 统一由国内服务器 crontab 调用 workflow_dispatch
+# （~/bin/apple-trigger.sh status.yml，每小时 :10 / :30 / :50 各一次）。
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write          # data/status_seen.json 需要回写
 
 concurrency:
   group: apple-cn-status
@@ -19,7 +23,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    # 49 家门店 × 1 个请求，按 5 秒节奏约 4 分钟；留足余量
+    # 20 家门店 × 1 个请求，按 5 秒节奏约 2 分钟；留足余量
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -31,3 +35,18 @@ jobs:
         env:
           APPLE_NTFY_TOKEN: ${{ secrets.APPLE_NTFY_TOKEN }}
         run: python3 apple_push.py --status
+
+      # 基线单独提交：只有真的出现「新有货 / 门店首次入库」时文件才会变，
+      # 没有变化就不产生 commit，避免每天几十个空提交。
+      - name: Persist restock baseline
+        if: always()
+        run: |
+          git config user.email "apple-cn-monitor-bot@users.noreply.github.com"
+          git config user.name "apple-cn-monitor bot"
+          git add data/status_seen.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "库存基线无变化，跳过提交"
+          else
+            git commit -m "chore(status): restock baseline [skip ci]"
+            git push || (git pull --rebase --autostash origin master && git push)
+          fi
