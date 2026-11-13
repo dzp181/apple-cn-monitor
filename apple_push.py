@@ -1031,7 +1031,7 @@ def cmd_status(cfg, dry_run=False):
     """全量抓「门店 × 机型」库存并发布快照，不写 state、不发提醒。
 
     苹果对同一出口 IP 的短时请求数很敏感（实测约 20 个就 541），所以：
-      - 门店顺序按小时轮转，单轮没抓完也不会总从同一批门店开始；
+      - 门店起点按 15 分钟时间片轮转，单轮只抓 status_batch 家；
       - 间隔 status_gap_s 秒，尽量不触发限频；
       - 一旦遇到 541 立刻停手，把已经抓到的门店照常发布。
     配置台后端会把最近多轮按门店合并，几轮之后就是完整覆盖。
@@ -1043,7 +1043,8 @@ def cmd_status(cfg, dry_run=False):
         raise SystemExit("catalog 为空，先跑 --refresh-catalog")
     gap = float(cfg.get("status_gap_s") or 3.5)
     batch = int(cfg.get("status_batch") or len(stores))
-    start = (int(time.time() // 3600) * 17) % len(stores)
+    # 按 15 分钟时间片轮转起点：单轮只抓一小批，多轮下来覆盖全部门店
+    start = (int(time.time() // 900) * 13) % len(stores)
     rotated = stores[start:] + stores[:start]
     picks = rotated[:batch]
 
