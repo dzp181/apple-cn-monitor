@@ -70,7 +70,8 @@ def log(msg):
 
 
 def now_ts():
-    return dt.datetime.now(CST).strftime("%Y-%m-%d %H:%M CST")
+    # 以推送卡片为准写清楚时区：CST 在手机上容易被读成美国中部时间
+    return dt.datetime.now(CST).strftime("%Y-%m-%d %H:%M 北京时间")
 
 
 def today():
