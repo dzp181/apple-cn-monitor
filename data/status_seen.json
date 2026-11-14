@@ -286,8 +286,7 @@
         "MG3D4CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MG3G4CH/A",
-        "MK2M4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R574": {
@@ -413,8 +412,7 @@
         "MG394CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MK2M4CH/A",
-        "MK2P4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R637": {
@@ -671,6 +669,6 @@
       ]
     }
   },
-  "updated": "2026-11-14 16:12 北京时间",
+  "updated": "2026-11-14 16:32 北京时间",
   "v": 2
 }
