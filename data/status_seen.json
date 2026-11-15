@@ -634,8 +634,7 @@
         "MG3C4CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MG3G4CH/A",
-        "MK2P4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R792": {
@@ -650,7 +649,7 @@
     },
     "R793": {
       "at": {
-        "MK2M4CH/A": 1794649927
+        "MK2M4CH/A": 1794705150
       },
       "parts": [
         "MG334CH/A",
@@ -659,10 +658,11 @@
         "MG374CH/A",
         "MG3A4CH/A",
         "MG3E4CH/A",
-        "MG3G4CH/A"
+        "MG3G4CH/A",
+        "MK2M4CH/A"
       ]
     }
   },
-  "updated": "2026-11-15 08:52 北京时间",
+  "updated": "2026-11-15 09:12 北京时间",
   "v": 2
 }
