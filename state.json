@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-13 18:30 北京时间",
+  "last_run": "2026-11-17 17:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -92,7 +92,7 @@
     },
     "accessories/FFEN4CH/A": {
       "category": "accessories",
-      "gone": false,
+      "gone": true,
       "part": "FFEN4CH/A",
       "price": 1869900,
       "target_tag": "",
@@ -938,7 +938,7 @@
     },
     "ipad/FNXM3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FNXM3CH/A",
       "price": 1436900,
       "target_tag": "",
@@ -1244,7 +1244,7 @@
     },
     "ipad/FUWD3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FUWD3CH/A",
       "price": 389900,
       "target_tag": "",
@@ -1253,7 +1253,7 @@
     },
     "ipad/FUWJ3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FUWJ3CH/A",
       "price": 439900,
       "target_tag": "",
@@ -1262,7 +1262,7 @@
     },
     "ipad/FUWK3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FUWK3CH/A",
       "price": 439900,
       "target_tag": "",
@@ -1271,7 +1271,7 @@
     },
     "ipad/FUWP3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FUWP3CH/A",
       "price": 559900,
       "target_tag": "",
@@ -2369,7 +2369,7 @@
     },
     "mac/FFEN4CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FFEN4CH/A",
       "price": 1869900,
       "target_tag": "",
@@ -2645,6 +2645,24 @@
       "target_tag": "",
       "title": "翻新 MacBook Neo (Apple A18 Pro 芯片，带有触控 ID) - 桃粉色",
       "url": "https://www.apple.com.cn/shop/product/fhfj4ch/a"
+    },
+    "mac/FRW43CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FRW43CH/A",
+      "price": 1669900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M3 Pro 芯片 (配备 12 核中央处理器和 18 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/frw43ch/a"
+    },
+    "mac/FRX73CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FRX73CH/A",
+      "price": 1619900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M3 Pro 芯片 (配备 12 核中央处理器和 18 核图形处理器) - 银色",
+      "url": "https://www.apple.com.cn/shop/product/frx73ch/a"
     },
     "mac/FU9D3CH/A": {
       "category": "mac",
@@ -2945,7 +2963,7 @@
     },
     "mac/G1EJ0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1EJ0CH/A",
       "price": 1439900,
       "target_tag": "",
@@ -3179,7 +3197,7 @@
     },
     "mac/G1K28CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1K28CH/A",
       "price": 1699900,
       "target_tag": "",
@@ -3251,7 +3269,7 @@
     },
     "mac/G1K7ACH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1K7ACH/A",
       "price": 1629900,
       "target_tag": "",
@@ -3413,7 +3431,7 @@
     },
     "mac/G1LW0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1LW0CH/A",
       "price": 1149900,
       "target_tag": "",
@@ -3431,7 +3449,7 @@
     },
     "mac/G1MH0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1MH0CH/A",
       "price": 1799900,
       "target_tag": "",
@@ -3447,6 +3465,15 @@
       "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) - 银色",
       "url": "https://www.apple.com.cn/shop/product/g1mhach/a"
     },
+    "mac/G1ML0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ML0CH/A",
+      "price": 1799900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1ml0ch/a"
+    },
     "mac/G1MLACH/A": {
       "category": "mac",
       "gone": false,
@@ -3458,7 +3485,7 @@
     },
     "mac/G1MM1CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1MM1CH/A",
       "price": 2939900,
       "target_tag": "",
@@ -3467,7 +3494,7 @@
     },
     "mac/G1MNFCH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1MNFCH/A",
       "price": 3369900,
       "target_tag": "",
