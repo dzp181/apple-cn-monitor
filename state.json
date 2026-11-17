@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-17 18:30 北京时间",
+  "last_run": "2026-11-17 19:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -2925,6 +2925,15 @@
       "title": "翻新 Apple Studio Display (配备纳米纹理玻璃面板和可调倾斜度的支架)",
       "url": "https://www.apple.com.cn/shop/product/fyjk3ch/a"
     },
+    "mac/G1AG7CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1AG7CH/A",
+      "price": 3989900,
+      "target_tag": "",
+      "title": "翻新 16 英寸 MacBook Pro Apple M3 Max 芯片 (配备 16 核中央处理器和 40 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1ag7ch/a"
+    },
     "mac/G1AK2CH/A": {
       "category": "mac",
       "gone": false,
@@ -2942,6 +2951,15 @@
       "target_tag": "",
       "title": "翻新 16 英寸 MacBook Pro Apple M3 Max 芯片 (配备 14 核中央处理器和 30 核图形处理器) - 银色",
       "url": "https://www.apple.com.cn/shop/product/g1ak3ch/a"
+    },
+    "mac/G1AUDCH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1AUDCH/A",
+      "price": 3769900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M3 Max 芯片 (配备 16 核中央处理器和 40 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1audch/a"
     },
     "mac/G1CF1CH/A": {
       "category": "mac",
@@ -3500,6 +3518,15 @@
       "target_tag": "",
       "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 15 核中央处理器和 16 核图形处理器) 和纳米纹理显示屏 - 深空黑色",
       "url": "https://www.apple.com.cn/shop/product/g1ml0ch/a"
+    },
+    "mac/G1ML8CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1ML8CH/A",
+      "price": 2459900,
+      "target_tag": "",
+      "title": "翻新 14 英寸 MacBook Pro Apple M5 Pro 芯片 (配备 18 核中央处理器和 20 核图形处理器) - 深空黑色",
+      "url": "https://www.apple.com.cn/shop/product/g1ml8ch/a"
     },
     "mac/G1MLACH/A": {
       "category": "mac",
