@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-18 16:30 北京时间",
+  "last_run": "2026-11-18 17:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -864,6 +864,15 @@
       "title": "翻新 iPad mini 6 无线局域网机型 256GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fk7x3ch/a"
     },
+    "ipad/FK943CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FK943CH/A",
+      "price": 509900,
+      "target_tag": "",
+      "title": "翻新 iPad mini 6 无线局域网 + 蜂窝网络机型 256GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fk943ch/a"
+    },
     "ipad/FLWR3CH/A": {
       "category": "ipad",
       "gone": false,
@@ -1296,6 +1305,15 @@
       "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 256GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fuwk3ch/a"
     },
+    "ipad/FUWM3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWM3CH/A",
+      "price": 559900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fuwm3ch/a"
+    },
     "ipad/FUWP3CH/A": {
       "category": "ipad",
       "gone": true,
@@ -1304,6 +1322,15 @@
       "target_tag": "",
       "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 512GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fuwp3ch/a"
+    },
+    "ipad/FUWT3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWT3CH/A",
+      "price": 679900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 1TB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fuwt3ch/a"
     },
     "ipad/FUXW3CH/A": {
       "category": "ipad",
