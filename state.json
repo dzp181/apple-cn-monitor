@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-18 17:30 北京时间",
+  "last_run": "2026-11-18 18:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -1034,6 +1034,15 @@
       "target_tag": "",
       "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 2TB 深空灰色 (第六代)",
       "url": "https://www.apple.com.cn/shop/product/fnxy3ch/a"
+    },
+    "ipad/FNY03CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FNY03CH/A",
+      "price": 1662900,
+      "target_tag": "",
+      "title": "翻新 12.9 英寸 iPad Pro 无线局域网机型 2TB 银色 (第六代)",
+      "url": "https://www.apple.com.cn/shop/product/fny03ch/a"
     },
     "ipad/FNYN3CH/A": {
       "category": "ipad",
