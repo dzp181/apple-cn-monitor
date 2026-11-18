@@ -28,14 +28,15 @@
         "MG364CH/A": 1794946331,
         "MG394CH/A": 1794946331,
         "MG3E4CH/A": 1794946331,
-        "MK2M4CH/A": 1794564737
+        "MK2M4CH/A": 1795008737
       },
       "parts": [
         "MG334CH/A",
         "MG344CH/A",
         "MG364CH/A",
         "MG394CH/A",
-        "MG3E4CH/A"
+        "MG3E4CH/A",
+        "MK2M4CH/A"
       ]
     },
     "R388": {
@@ -120,8 +121,7 @@
         "MG334CH/A",
         "MG364CH/A",
         "MG394CH/A",
-        "MG3E4CH/A",
-        "MK2M4CH/A"
+        "MG3E4CH/A"
       ]
     },
     "R471": {
@@ -282,8 +282,7 @@
         "MG364CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MG3G4CH/A",
-        "MK2P4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R532": {
@@ -296,8 +295,7 @@
         "MG334CH/A",
         "MG364CH/A",
         "MG374CH/A",
-        "MG3G4CH/A",
-        "MK2M4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R534": {
@@ -930,6 +928,6 @@
       ]
     }
   },
-  "updated": "2026-11-18 21:12 北京时间",
+  "updated": "2026-11-18 21:32 北京时间",
   "v": 2
 }
