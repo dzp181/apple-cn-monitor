@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-17 19:30 北京时间",
+  "last_run": "2026-11-18 15:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -1244,12 +1244,30 @@
     },
     "ipad/FUWD3CH/A": {
       "category": "ipad",
-      "gone": true,
+      "gone": false,
       "part": "FUWD3CH/A",
       "price": 389900,
       "target_tag": "",
       "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 128GB - 蓝色",
       "url": "https://www.apple.com.cn/shop/product/fuwd3ch/a"
+    },
+    "ipad/FUWE3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWE3CH/A",
+      "price": 389900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 128GB - 星光色",
+      "url": "https://www.apple.com.cn/shop/product/fuwe3ch/a"
+    },
+    "ipad/FUWF3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWF3CH/A",
+      "price": 389900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 128GB - 紫色",
+      "url": "https://www.apple.com.cn/shop/product/fuwf3ch/a"
     },
     "ipad/FUWJ3CH/A": {
       "category": "ipad",
@@ -1487,7 +1505,7 @@
     },
     "ipad/FVVE3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FVVE3CH/A",
       "price": 1259900,
       "target_tag": "",
@@ -2648,7 +2666,7 @@
     },
     "mac/FRW43CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FRW43CH/A",
       "price": 1669900,
       "target_tag": "",
@@ -2783,7 +2801,7 @@
     },
     "mac/FWUY3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FWUY3CH/A",
       "price": 1119900,
       "target_tag": "",
@@ -3521,7 +3539,7 @@
     },
     "mac/G1ML8CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1ML8CH/A",
       "price": 2459900,
       "target_tag": "",
