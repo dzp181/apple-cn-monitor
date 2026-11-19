@@ -459,7 +459,6 @@
         "MG374CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2P4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -491,7 +490,6 @@
         "MG3F4CH/A",
         "MG3G4CH/A",
         "MK2N4CH/A",
-        "MK2P4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -508,8 +506,7 @@
         "MG334CH/A",
         "MG364CH/A",
         "MG394CH/A",
-        "MG3G4CH/A",
-        "MK2N4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R577": {
@@ -1053,6 +1050,6 @@
       ]
     }
   },
-  "updated": "2026-11-20 01:12 北京时间",
+  "updated": "2026-11-20 01:32 北京时间",
   "v": 2
 }
