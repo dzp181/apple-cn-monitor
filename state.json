@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-18 18:30 北京时间",
+  "last_run": "2026-11-20 14:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -866,7 +866,7 @@
     },
     "ipad/FK943CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FK943CH/A",
       "price": 509900,
       "target_tag": "",
@@ -2990,7 +2990,7 @@
     },
     "mac/G1AG7CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1AG7CH/A",
       "price": 3989900,
       "target_tag": "",
@@ -3431,7 +3431,7 @@
     },
     "mac/G1KM3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1KM3CH/A",
       "price": 1699900,
       "target_tag": "",
@@ -3467,7 +3467,7 @@
     },
     "mac/G1L01CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1L01CH/A",
       "price": 1039900,
       "target_tag": "",
@@ -3485,7 +3485,7 @@
     },
     "mac/G1L60CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1L60CH/A",
       "price": 909900,
       "target_tag": "",
@@ -3557,7 +3557,7 @@
     },
     "mac/G1MH5CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1MH5CH/A",
       "price": 1919900,
       "target_tag": "",
@@ -3575,7 +3575,7 @@
     },
     "mac/G1ML0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1ML0CH/A",
       "price": 1799900,
       "target_tag": "",
@@ -3842,6 +3842,15 @@
       "target_tag": "",
       "title": "翻新 Apple Watch Series 11 (GPS)；42 毫米银色铝金属表壳；雾紫色运动型表带 (M/L 号)",
       "url": "https://www.apple.com.cn/shop/product/feuu4ch/b"
+    },
+    "watch/FEVH4CH/B": {
+      "category": "watch",
+      "gone": false,
+      "part": "FEVH4CH/B",
+      "price": 239900,
+      "target_tag": "",
+      "title": "翻新 Apple Watch Series 11 (GPS)；46 毫米亮黑色铝金属表壳；黑色运动型表带 (M/L 号)",
+      "url": "https://www.apple.com.cn/shop/product/fevh4ch/b"
     },
     "watch/FEVN4CH/B": {
       "category": "watch",
