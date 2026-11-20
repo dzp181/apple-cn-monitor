@@ -314,7 +314,6 @@
         "MG3A4CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2N4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -390,7 +389,6 @@
         "MG364CH/A",
         "MG3C4CH/A",
         "MG3E4CH/A",
-        "MK2N4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -427,7 +425,6 @@
         "MG3E4CH/A",
         "MG3F4CH/A",
         "MG3G4CH/A",
-        "MK2N4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -553,7 +550,8 @@
         "MK2M4CH/A": 1794633154,
         "MK2N4CH/A": 1795092743,
         "MK2P4CH/A": 1795092743,
-        "MK2Q4CH/A": 1795092743
+        "MK2Q4CH/A": 1795092743,
+        "MK2W4CH/A": 1795162326
       },
       "parts": [
         "MG334CH/A",
@@ -561,7 +559,8 @@
         "MG364CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MK2Q4CH/A"
+        "MK2Q4CH/A",
+        "MK2W4CH/A"
       ]
     },
     "R580": {
@@ -584,7 +583,6 @@
         "MG3E4CH/A",
         "MG3F4CH/A",
         "MG3G4CH/A",
-        "MK2P4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -1078,6 +1076,6 @@
       ]
     }
   },
-  "updated": "2026-11-20 15:52 北京时间",
+  "updated": "2026-11-20 16:12 北京时间",
   "v": 2
 }
