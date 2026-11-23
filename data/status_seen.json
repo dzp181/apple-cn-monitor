@@ -348,8 +348,7 @@
         "MG3F4CH/A",
         "MG3G4CH/A",
         "MK2N4CH/A",
-        "MK2P4CH/A",
-        "MK2Q4CH/A"
+        "MK2P4CH/A"
       ]
     },
     "R532": {
@@ -384,7 +383,6 @@
         "MG3E4CH/A",
         "MG3F4CH/A",
         "MK2M4CH/A",
-        "MK2N4CH/A",
         "MK2Q4CH/A"
       ]
     },
@@ -593,7 +591,6 @@
         "MG364CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MK2N4CH/A",
         "MK2P4CH/A",
         "MK2Q4CH/A"
       ]
@@ -1140,6 +1137,6 @@
       ]
     }
   },
-  "updated": "2026-11-23 12:32 北京时间",
+  "updated": "2026-11-23 12:52 北京时间",
   "v": 2
 }
