@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-24 17:30 北京时间",
+  "last_run": "2026-11-24 18:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -1331,6 +1331,15 @@
       "target_tag": "",
       "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 512GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fuwp3ch/a"
+    },
+    "ipad/FUWQ3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUWQ3CH/A",
+      "price": 679900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网机型 1TB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fuwq3ch/a"
     },
     "ipad/FUWT3CH/A": {
       "category": "ipad",
@@ -3078,6 +3087,24 @@
       "title": "翻新 Mac Studio Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器)",
       "url": "https://www.apple.com.cn/shop/product/g1cd7ch/a"
     },
+    "mac/G1CE1CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1CE1CH/A",
+      "price": 4659900,
+      "target_tag": "",
+      "title": "翻新 Mac Studio Apple M3 Ultra 芯片 (配备 32 核中央处理器和 80 核图形处理器)",
+      "url": "https://www.apple.com.cn/shop/product/g1ce1ch/a"
+    },
+    "mac/G1CE9CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1CE9CH/A",
+      "price": 4659900,
+      "target_tag": "",
+      "title": "翻新 Mac Studio Apple M3 Ultra 芯片 (配备 28 核中央处理器和 60 核图形处理器)",
+      "url": "https://www.apple.com.cn/shop/product/g1ce9ch/a"
+    },
     "mac/G1CF1CH/A": {
       "category": "mac",
       "gone": false,
@@ -3089,7 +3116,7 @@
     },
     "mac/G1CF9CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1CF9CH/A",
       "price": 639900,
       "target_tag": "",
