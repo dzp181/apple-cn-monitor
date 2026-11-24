@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-24 16:30 北京时间",
+  "last_run": "2026-11-24 17:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -2754,6 +2754,15 @@
       "title": "翻新 Mac Studio Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器)",
       "url": "https://www.apple.com.cn/shop/product/fu963ch/a"
     },
+    "mac/FU973CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "FU973CH/A",
+      "price": 3699900,
+      "target_tag": "",
+      "title": "翻新 Mac Studio Apple M3 Ultra 芯片 (配备 28 核中央处理器和 60 核图形处理器)",
+      "url": "https://www.apple.com.cn/shop/product/fu973ch/a"
+    },
     "mac/FU9D3CH/A": {
       "category": "mac",
       "gone": false,
@@ -3060,6 +3069,15 @@
       "title": "翻新 Mac Studio Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器)",
       "url": "https://www.apple.com.cn/shop/product/g1cd3ch/a"
     },
+    "mac/G1CD7CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1CD7CH/A",
+      "price": 2069900,
+      "target_tag": "",
+      "title": "翻新 Mac Studio Apple M4 Max 芯片 (配备 14 核中央处理器和 32 核图形处理器)",
+      "url": "https://www.apple.com.cn/shop/product/g1cd7ch/a"
+    },
     "mac/G1CF1CH/A": {
       "category": "mac",
       "gone": false,
@@ -3071,7 +3089,7 @@
     },
     "mac/G1CF9CH/A": {
       "category": "mac",
-      "gone": true,
+      "gone": false,
       "part": "G1CF9CH/A",
       "price": 639900,
       "target_tag": "",
