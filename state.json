@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-24 12:30 北京时间",
+  "last_run": "2026-11-24 13:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -3249,6 +3249,15 @@
       "title": "翻新 15 英寸 MacBook Air Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
       "url": "https://www.apple.com.cn/shop/product/g1he0ch/a"
     },
+    "mac/G1JV0CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JV0CH/A",
+      "price": 1279900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 12 核中央处理器和 16 核图形处理器) 和 10Gb 以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jv0ch/a"
+    },
     "mac/G1JV5CH/A": {
       "category": "mac",
       "gone": false,
@@ -3266,6 +3275,15 @@
       "target_tag": "",
       "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和千兆以太网端口",
       "url": "https://www.apple.com.cn/shop/product/g1jvgch/a"
+    },
+    "mac/G1JX4CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JX4CH/A",
+      "price": 1439900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 芯片 (配备 10 核中央处理器和 10 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jx4ch/a"
     },
     "mac/G1K10CH/A": {
       "category": "mac",
@@ -3527,6 +3545,15 @@
       "target_tag": "",
       "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
       "url": "https://www.apple.com.cn/shop/product/g1l61ch/a"
+    },
+    "mac/G1L70CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1L70CH/A",
+      "price": 1359900,
+      "target_tag": "",
+      "title": "翻新 13 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 午夜色",
+      "url": "https://www.apple.com.cn/shop/product/g1l70ch/a"
     },
     "mac/G1L90CH/A": {
       "category": "mac",
