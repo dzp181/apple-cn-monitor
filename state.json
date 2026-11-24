@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-20 14:30 北京时间",
+  "last_run": "2026-11-24 11:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -1325,7 +1325,7 @@
     },
     "ipad/FUWP3CH/A": {
       "category": "ipad",
-      "gone": true,
+      "gone": false,
       "part": "FUWP3CH/A",
       "price": 559900,
       "target_tag": "",
@@ -1386,6 +1386,15 @@
       "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fuy53ch/a"
     },
+    "ipad/FUY73CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FUY73CH/A",
+      "price": 649900,
+      "target_tag": "",
+      "title": "翻新 11 英寸 iPad Air (M2) 无线局域网 + 蜂窝网络机型 512GB - 蓝色",
+      "url": "https://www.apple.com.cn/shop/product/fuy73ch/a"
+    },
     "ipad/FUYA3CH/A": {
       "category": "ipad",
       "gone": false,
@@ -1433,7 +1442,7 @@
     },
     "ipad/FV7D3CH/A": {
       "category": "ipad",
-      "gone": false,
+      "gone": true,
       "part": "FV7D3CH/A",
       "price": 649900,
       "target_tag": "",
@@ -2007,6 +2016,15 @@
       "title": "翻新 iPad mini (A17 Pro) 无线局域网 + 蜂窝网络机型 256GB - 紫色",
       "url": "https://www.apple.com.cn/shop/product/fxq73ch/a"
     },
+    "ipad/FYGY3CH/A": {
+      "category": "ipad",
+      "gone": false,
+      "part": "FYGY3CH/A",
+      "price": 599900,
+      "target_tag": "",
+      "title": "翻新 iPad mini (A17 Pro) 无线局域网机型 512GB - 深空灰色",
+      "url": "https://www.apple.com.cn/shop/product/fygy3ch/a"
+    },
     "ipad/FYH13CH/A": {
       "category": "ipad",
       "gone": false,
@@ -2162,7 +2180,7 @@
     },
     "mac/FDE14CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FDE14CH/A",
       "price": 1289900,
       "target_tag": "",
@@ -2189,7 +2207,7 @@
     },
     "mac/FDE54CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FDE54CH/A",
       "price": 1289900,
       "target_tag": "",
@@ -2531,7 +2549,7 @@
     },
     "mac/FGDQ4CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGDQ4CH/A",
       "price": 2889900,
       "target_tag": "",
@@ -2558,7 +2576,7 @@
     },
     "mac/FGDU4CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGDU4CH/A",
       "price": 2889900,
       "target_tag": "",
@@ -2819,7 +2837,7 @@
     },
     "mac/FW2W3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FW2W3CH/A",
       "price": 1029900,
       "target_tag": "",
@@ -3395,7 +3413,7 @@
     },
     "mac/G1KJ2CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1KJ2CH/A",
       "price": 1389900,
       "target_tag": "",
@@ -3440,7 +3458,7 @@
     },
     "mac/G1KN0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1KN0CH/A",
       "price": 1739900,
       "target_tag": "",
@@ -3638,7 +3656,7 @@
     },
     "mac/G1N10CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1N10CH/A",
       "price": 3159900,
       "target_tag": "",
