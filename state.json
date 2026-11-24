@@ -1,6 +1,6 @@
 {
   "cooldown_until": 0,
-  "last_run": "2026-11-24 15:30 北京时间",
+  "last_run": "2026-11-24 16:30 北京时间",
   "pickup": {
     "MG314CH/A": {
       "last_notified": 0,
@@ -2585,7 +2585,7 @@
     },
     "mac/FGE44CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGE44CH/A",
       "price": 2119900,
       "target_tag": "",
@@ -2603,7 +2603,7 @@
     },
     "mac/FGE74CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGE74CH/A",
       "price": 3059900,
       "target_tag": "",
@@ -2621,7 +2621,7 @@
     },
     "mac/FGEA4CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGEA4CH/A",
       "price": 2119900,
       "target_tag": "",
@@ -2639,7 +2639,7 @@
     },
     "mac/FGED4CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FGED4CH/A",
       "price": 3059900,
       "target_tag": "",
@@ -2936,7 +2936,7 @@
     },
     "mac/FX2T3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FX2T3CH/A",
       "price": 1839900,
       "target_tag": "",
@@ -2963,7 +2963,7 @@
     },
     "mac/FX2X3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FX2X3CH/A",
       "price": 1839900,
       "target_tag": "",
@@ -2972,7 +2972,7 @@
     },
     "mac/FX2Y3CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FX2Y3CH/A",
       "price": 2229900,
       "target_tag": "",
@@ -2981,7 +2981,7 @@
     },
     "mac/FX303CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FX303CH/A",
       "price": 2639900,
       "target_tag": "",
@@ -2990,7 +2990,7 @@
     },
     "mac/FX313CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "FX313CH/A",
       "price": 3069900,
       "target_tag": "",
@@ -3071,7 +3071,7 @@
     },
     "mac/G1CF9CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1CF9CH/A",
       "price": 639900,
       "target_tag": "",
@@ -3293,6 +3293,24 @@
       "target_tag": "",
       "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和千兆以太网端口",
       "url": "https://www.apple.com.cn/shop/product/g1jv5ch/a"
+    },
+    "mac/G1JV7CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JV7CH/A",
+      "price": 1759900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和千兆以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jv7ch/a"
+    },
+    "mac/G1JV8CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1JV8CH/A",
+      "price": 1819900,
+      "target_tag": "",
+      "title": "翻新 Mac mini Apple M4 Pro 芯片 (配备 14 核中央处理器和 20 核图形处理器) 和 10Gb 以太网端口",
+      "url": "https://www.apple.com.cn/shop/product/g1jv8ch/a"
     },
     "mac/G1JVGCH/A": {
       "category": "mac",
@@ -3647,7 +3665,7 @@
     },
     "mac/G1LW0CH/A": {
       "category": "mac",
-      "gone": false,
+      "gone": true,
       "part": "G1LW0CH/A",
       "price": 1149900,
       "target_tag": "",
@@ -3662,6 +3680,15 @@
       "target_tag": "",
       "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
       "url": "https://www.apple.com.cn/shop/product/g1lz0ch/a"
+    },
+    "mac/G1M23CH/A": {
+      "category": "mac",
+      "gone": false,
+      "part": "G1M23CH/A",
+      "price": 1789900,
+      "target_tag": "",
+      "title": "翻新 15 英寸 MacBook Air Apple M5 芯片 (配备 10 核中央处理器和 10 核图形处理器) - 天蓝色",
+      "url": "https://www.apple.com.cn/shop/product/g1m23ch/a"
     },
     "mac/G1MH0CH/A": {
       "category": "mac",
