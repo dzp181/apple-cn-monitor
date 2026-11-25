@@ -11,7 +11,8 @@
         "MK2M4CH/A": 1795349524,
         "MK2N4CH/A": 1795179128,
         "MK2P4CH/A": 1795443128,
-        "MK2Q4CH/A": 1795461128
+        "MK2Q4CH/A": 1795461128,
+        "MK2V4CH/A": 1795570328
       },
       "parts": [
         "MG334CH/A",
@@ -19,7 +20,8 @@
         "MG394CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A"
+        "MK2M4CH/A",
+        "MK2V4CH/A"
       ]
     },
     "R359": {
@@ -32,13 +34,15 @@
         "MK2M4CH/A": 1795008737,
         "MK2N4CH/A": 1795432328,
         "MK2P4CH/A": 1795485131,
-        "MK2Q4CH/A": 1795314734
+        "MK2Q4CH/A": 1795314734,
+        "MK2V4CH/A": 1795570329
       },
       "parts": [
         "MG334CH/A",
         "MG364CH/A",
         "MG394CH/A",
-        "MG3E4CH/A"
+        "MG3E4CH/A",
+        "MK2V4CH/A"
       ]
     },
     "R388": {
@@ -60,8 +64,7 @@
         "MG344CH/A",
         "MG364CH/A",
         "MG3E4CH/A",
-        "MG3G4CH/A",
-        "MK2V4CH/A"
+        "MG3G4CH/A"
       ]
     },
     "R389": {
@@ -76,7 +79,8 @@
         "MK2M4CH/A": 1795219928,
         "MK2N4CH/A": 1795393925,
         "MK2P4CH/A": 1795314734,
-        "MK2Q4CH/A": 1795314734
+        "MK2Q4CH/A": 1795314734,
+        "MK2V4CH/A": 1795570329
       },
       "parts": [
         "MG334CH/A",
@@ -85,7 +89,8 @@
         "MG394CH/A",
         "MG3A4CH/A",
         "MG3C4CH/A",
-        "MG3E4CH/A"
+        "MG3E4CH/A",
+        "MK2V4CH/A"
       ]
     },
     "R390": {
@@ -129,9 +134,7 @@
         "MG364CH/A",
         "MG394CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A",
-        "MK2V4CH/A",
-        "MK2W4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R448": {
@@ -224,8 +227,7 @@
         "MG334CH/A",
         "MG364CH/A",
         "MG374CH/A",
-        "MG3E4CH/A",
-        "MK2V4CH/A"
+        "MG3E4CH/A"
       ]
     },
     "R480": {
@@ -301,8 +303,7 @@
         "MG3A4CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A",
-        "MK2Q4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R502": {
@@ -1133,11 +1134,10 @@
         "MG3A4CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2P4CH/A",
-        "MK2Q4CH/A"
+        "MK2P4CH/A"
       ]
     }
   },
-  "updated": "2026-11-25 09:12 北京时间",
+  "updated": "2026-11-25 09:32 北京时间",
   "v": 2
 }
