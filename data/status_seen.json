@@ -177,8 +177,7 @@
         "MG394CH/A",
         "MG3A4CH/A",
         "MG3E4CH/A",
-        "MK2M4CH/A",
-        "MK2N4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R476": {
@@ -304,8 +303,7 @@
         "MG3A4CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A",
-        "MK2V4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R502": {
@@ -330,8 +328,7 @@
         "MG394CH/A",
         "MG3E4CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A",
-        "MK2P4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R531": {
@@ -390,8 +387,7 @@
         "MG3A4CH/A",
         "MG3E4CH/A",
         "MG3F4CH/A",
-        "MK2M4CH/A",
-        "MK2Q4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R557": {
@@ -452,8 +448,7 @@
         "MG3G4CH/A",
         "MK2M4CH/A",
         "MK2N4CH/A",
-        "MK2P4CH/A",
-        "MK2Q4CH/A"
+        "MK2P4CH/A"
       ]
     },
     "R573": {
@@ -475,8 +470,7 @@
         "MG3E4CH/A",
         "MG3F4CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A",
-        "MK2Q4CH/A"
+        "MK2M4CH/A"
       ]
     },
     "R574": {
@@ -1150,6 +1144,6 @@
       ]
     }
   },
-  "updated": "2026-11-25 14:12 北京时间",
+  "updated": "2026-11-25 14:32 北京时间",
   "v": 2
 }
