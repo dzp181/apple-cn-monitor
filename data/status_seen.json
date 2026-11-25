@@ -269,6 +269,7 @@
         "MK2N4CH/A": 1795312328,
         "MK2P4CH/A": 1795399927,
         "MK2Q4CH/A": 1795140727,
+        "MK2V4CH/A": 1795573927,
         "MK2W4CH/A": 1795055532
       },
       "parts": [
@@ -280,7 +281,8 @@
         "MG3F4CH/A",
         "MK2M4CH/A",
         "MK2P4CH/A",
-        "MK2Q4CH/A"
+        "MK2Q4CH/A",
+        "MK2V4CH/A"
       ]
     },
     "R493": {
@@ -331,8 +333,7 @@
         "MG3E4CH/A",
         "MG3G4CH/A",
         "MK2M4CH/A",
-        "MK2P4CH/A",
-        "MK2Q4CH/A"
+        "MK2P4CH/A"
       ]
     },
     "R531": {
@@ -366,13 +367,17 @@
         "MK2M4CH/A": 1795356727,
         "MK2N4CH/A": 1795511525,
         "MK2P4CH/A": 1795411938,
-        "MK2Q4CH/A": 1795318327
+        "MK2Q4CH/A": 1795318327,
+        "MK2V4CH/A": 1795573928,
+        "MK2W4CH/A": 1795573928
       },
       "parts": [
         "MG334CH/A",
         "MG364CH/A",
         "MG3G4CH/A",
-        "MK2M4CH/A"
+        "MK2M4CH/A",
+        "MK2V4CH/A",
+        "MK2W4CH/A"
       ]
     },
     "R534": {
@@ -502,9 +507,7 @@
         "MG3E4CH/A",
         "MG3G4CH/A",
         "MK2M4CH/A",
-        "MK2N4CH/A",
-        "MK2V4CH/A",
-        "MK2W4CH/A"
+        "MK2V4CH/A"
       ]
     },
     "R575": {
@@ -520,7 +523,7 @@
         "MG3G4CH/A": 1794939131,
         "MK2M4CH/A": 1795359131,
         "MK2N4CH/A": 1795221126,
-        "MK2P4CH/A": 1795529527,
+        "MK2P4CH/A": 1795573928,
         "MK2Q4CH/A": 1795482729,
         "MK2W4CH/A": 1795239127
       },
@@ -535,7 +538,8 @@
         "MG3F4CH/A",
         "MG3G4CH/A",
         "MK2M4CH/A",
-        "MK2N4CH/A"
+        "MK2N4CH/A",
+        "MK2P4CH/A"
       ]
     },
     "R576": {
@@ -600,8 +604,7 @@
         "MG344CH/A",
         "MG364CH/A",
         "MG3E4CH/A",
-        "MG3F4CH/A",
-        "MK2V4CH/A"
+        "MG3F4CH/A"
       ]
     },
     "R580": {
@@ -645,8 +648,7 @@
         "MG334CH/A",
         "MG364CH/A",
         "MG3A4CH/A",
-        "MG3E4CH/A",
-        "MK2V4CH/A"
+        "MG3E4CH/A"
       ]
     },
     "R609": {
@@ -1151,6 +1153,6 @@
       ]
     }
   },
-  "updated": "2026-11-25 10:12 北京时间",
+  "updated": "2026-11-25 10:32 北京时间",
   "v": 2
 }
