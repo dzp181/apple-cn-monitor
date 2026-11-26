@@ -283,8 +283,7 @@
         "MG3F4CH/A",
         "MK2M4CH/A",
         "MK2P4CH/A",
-        "MK2Q4CH/A",
-        "MK2V4CH/A"
+        "MK2Q4CH/A"
       ]
     },
     "R493": {
@@ -463,7 +462,6 @@
         "MG3F4CH/A",
         "MG3G4CH/A",
         "MK2M4CH/A",
-        "MK2N4CH/A",
         "MK2Q4CH/A",
         "MK2V4CH/A"
       ]
@@ -1178,6 +1176,6 @@
       ]
     }
   },
-  "updated": "2026-11-26 18:52 北京时间",
+  "updated": "2026-11-26 19:12 北京时间",
   "v": 2
 }
